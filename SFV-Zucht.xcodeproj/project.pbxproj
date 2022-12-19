@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA09482D294F3455008CD9CB /* VorstandSFVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA09482C294F3455008CD9CB /* VorstandSFVViewController.swift */; };
 		BAC25E2D294DEF9600A57BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E2C294DEF9600A57BBA /* AppDelegate.swift */; };
 		BAC25E2F294DEF9600A57BBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E2E294DEF9600A57BBA /* SceneDelegate.swift */; };
 		BAC25E31294DEF9600A57BBA /* Login ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E30294DEF9600A57BBA /* Login ViewController.swift */; };
@@ -16,10 +17,10 @@
 		BAC25E3C294DEF9700A57BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC25E3A294DEF9700A57BBA /* LaunchScreen.storyboard */; };
 		BAC25E4B294E5EF100A57BBA /* Vorstand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E4A294E5EF100A57BBA /* Vorstand.swift */; };
 		BAC25E55294E860800A57BBA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E54294E860800A57BBA /* TabBarViewController.swift */; };
-		BAC25E59294E95D300A57BBA /* VorstandTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E58294E95D300A57BBA /* VorstandTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA09482C294F3455008CD9CB /* VorstandSFVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VorstandSFVViewController.swift; sourceTree = "<group>"; };
 		BAC25E29294DEF9600A57BBA /* SFV-Zucht.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SFV-Zucht.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC25E2C294DEF9600A57BBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAC25E2E294DEF9600A57BBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		BAC25E3D294DEF9700A57BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAC25E4A294E5EF100A57BBA /* Vorstand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vorstand.swift; sourceTree = "<group>"; };
 		BAC25E54294E860800A57BBA /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		BAC25E58294E95D300A57BBA /* VorstandTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VorstandTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				BAC25E4A294E5EF100A57BBA /* Vorstand.swift */,
-				BAC25E58294E95D300A57BBA /* VorstandTableViewController.swift */,
+				BA09482C294F3455008CD9CB /* VorstandSFVViewController.swift */,
 			);
 			path = Vorstand;
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAC25E59294E95D300A57BBA /* VorstandTableViewController.swift in Sources */,
+				BA09482D294F3455008CD9CB /* VorstandSFVViewController.swift in Sources */,
 				BAC25E31294DEF9600A57BBA /* Login ViewController.swift in Sources */,
 				BAC25E2D294DEF9600A57BBA /* AppDelegate.swift in Sources */,
 				BAC25E37294DEF9600A57BBA /* SFV_Zucht.xcdatamodeld in Sources */,
