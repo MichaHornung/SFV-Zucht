@@ -111,15 +111,233 @@
         <!--Gewaesser View Controller-->
         <scene sceneID="CnN-er-47Z">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="OVk-vf-dAy" userLabel="Gewaesser View Controller" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="OVk-vf-dAy" userLabel="Gewaesser View Controller" customClass="GewaesserAnsichtViewController" customModule="SFV_Zucht" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ipL-eZ-k2D">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rl7-Vs-iEi">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nQE-m7-JRi">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1436"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hoZ-zA-XZ5" userLabel="BildView">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="128"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SchauffeleBild" translatesAutoresizingMaskIntoConstraints="NO" id="jsZ-rU-Q7G">
+                                                        <rect key="frame" x="-3" y="0.0" width="396" height="128"/>
+                                                        <color key="backgroundColor" red="0.1647058874" green="0.2235293984" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="128" id="bym-ji-tXg"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="jsZ-rU-Q7G" firstAttribute="leading" secondItem="hoZ-zA-XZ5" secondAttribute="leading" constant="-3" id="JE5-2W-16V"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jsZ-rU-Q7G" secondAttribute="trailing" id="T3O-2d-ZrU"/>
+                                                    <constraint firstItem="jsZ-rU-Q7G" firstAttribute="centerY" secondItem="hoZ-zA-XZ5" secondAttribute="centerY" id="VuY-Z1-oxW"/>
+                                                    <constraint firstItem="jsZ-rU-Q7G" firstAttribute="top" secondItem="hoZ-zA-XZ5" secondAttribute="top" id="gqN-hk-ZMM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAb-67-fyv" userLabel="GewaesserView">
+                                                <rect key="frame" x="0.0" y="136" width="393" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gewässer Schauffele" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clV-sv-7SG" userLabel="GewaesserName">
+                                                        <rect key="frame" x="72" y="8" width="248" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vko-Oj-iBc">
+                                                        <rect key="frame" x="8" y="54" width="42" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="X6d-rr-TXY"/>
+                                                <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="xQY-iV-AlN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eoI-dD-k4B">
+                                                <rect key="frame" x="0.0" y="224" width="393" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhg-mm-iNh" userLabel="LageTextView">
+                                                        <rect key="frame" x="175" y="46" width="42" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1647058874" green="0.2235293984" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="xgM-kI-qnn"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwJ-71-1M5" userLabel="LabelGewaessergroesseView">
+                                                <rect key="frame" x="0.0" y="360" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gewässergröße:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSj-tO-JRf">
+                                                        <rect key="frame" x="8" y="8" width="125" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Xgm-vO-GVo"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evU-8b-uKp" userLabel="GewaessergroesseTextView">
+                                                <rect key="frame" x="0.0" y="408" width="393" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehZ-ap-IXy">
+                                                        <rect key="frame" x="115" y="54" width="174" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">ca.30 ha Wasserfläche
+
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1647058874" green="0.2235293984" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="ivT-7h-wka"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDt-HZ-pQc" userLabel="BesonderheitenView">
+                                                <rect key="frame" x="0.0" y="544" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Besonderheiten:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QI9-wK-xv6">
+                                                        <rect key="frame" x="0.0" y="8" width="125" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Bv2-XG-vRV"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDA-b0-KnI" userLabel="BesonderheitenTextView">
+                                                <rect key="frame" x="0.0" y="592" width="393" height="150"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyE-nA-Mdw" userLabel="BesonderheitenTextView">
+                                                        <rect key="frame" x="175" y="65" width="42" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1647058874" green="0.2235293984" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="2eQ-aq-lgQ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QcF-Hc-erJ" userLabel="GewaesserInfoView">
+                                                <rect key="frame" x="0.0" y="750" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gewässerinfo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pA-4c-VKG">
+                                                        <rect key="frame" x="8" y="8" width="108" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="i9E-lB-716"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfm-6d-FR2" userLabel="GewaesserInfoTextView">
+                                                <rect key="frame" x="0.0" y="798" width="393" height="330"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0z-LP-uQM" userLabel="gewaesserInfo">
+                                                        <rect key="frame" x="175" y="147" width="42" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="330" id="kyA-zf-n8Y"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSM-xR-aJT" userLabel="KarteView">
+                                                <rect key="frame" x="0.0" y="1136" width="393" height="300"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Schauffele" translatesAutoresizingMaskIntoConstraints="NO" id="neg-xz-fbj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="fyR-Vr-eqJ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1647058874" green="0.2235293984" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1647058874" green="0.2235293984" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="nQE-m7-JRi" firstAttribute="width" secondItem="OWa-CD-zqk" secondAttribute="width" id="8cK-F2-bec"/>
+                                    <constraint firstItem="WXT-22-uTV" firstAttribute="top" secondItem="nQE-m7-JRi" secondAttribute="top" id="Rhj-Se-pN3"/>
+                                    <constraint firstItem="nQE-m7-JRi" firstAttribute="leading" secondItem="WXT-22-uTV" secondAttribute="leading" id="c7Z-eF-jET"/>
+                                    <constraint firstItem="nQE-m7-JRi" firstAttribute="trailing" secondItem="WXT-22-uTV" secondAttribute="trailing" id="hVQ-nH-bt8"/>
+                                    <constraint firstItem="nQE-m7-JRi" firstAttribute="bottom" secondItem="WXT-22-uTV" secondAttribute="bottom" id="ybZ-PE-XpQ"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="WXT-22-uTV"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="OWa-CD-zqk"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gGN-iw-cTW"/>
                         <color key="backgroundColor" red="0.1647058874" green="0.2235293984" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Rl7-Vs-iEi" firstAttribute="leading" secondItem="gGN-iw-cTW" secondAttribute="leading" id="Rri-uF-l2y"/>
+                            <constraint firstItem="Rl7-Vs-iEi" firstAttribute="trailing" secondItem="gGN-iw-cTW" secondAttribute="trailing" id="YKx-1R-abf"/>
+                            <constraint firstAttribute="bottom" secondItem="Rl7-Vs-iEi" secondAttribute="bottom" id="oUZ-m6-7BL"/>
+                            <constraint firstItem="Rl7-Vs-iEi" firstAttribute="top" secondItem="ipL-eZ-k2D" secondAttribute="top" id="rCl-lK-WfK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7EL-i8-okx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="besonderheitenTextView" destination="FyE-nA-Mdw" id="oMC-wJ-xcJ"/>
+                        <outlet property="gewaesserGroesseTextView" destination="ehZ-ap-IXy" id="zJS-2t-ntn"/>
+                        <outlet property="gewaesserInfo" destination="C0z-LP-uQM" id="inu-Qf-PK7"/>
+                        <outlet property="gewaesserKartePic" destination="neg-xz-fbj" id="5Mg-mc-98x"/>
+                        <outlet property="gewaesserName" destination="clV-sv-7SG" id="OoT-kf-7iq"/>
+                        <outlet property="gewaesserPic" destination="jsZ-rU-Q7G" id="nP1-VR-wls"/>
+                        <outlet property="lageTextView" destination="Mhg-mm-iNh" id="dTY-Lb-0Es"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vEc-P3-ZVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -567,7 +785,7 @@ Danach folgten die Berichte der Vorstandschaft. Im Bericht des 1. Vorsitzenden R
         <!--Gewaesser Table View Controller-->
         <scene sceneID="Zkh-vU-Yyf">
             <objects>
-                <tableViewController id="QXu-YT-exS" userLabel="Gewaesser Table View Controller" sceneMemberID="viewController">
+                <tableViewController id="QXu-YT-exS" userLabel="Gewaesser Table View Controller" customClass="GewaesserTableViewController" customModule="SFV_Zucht" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="7AD-yO-20O" userLabel="GewaesserView">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -589,7 +807,7 @@ Danach folgten die Berichte der Vorstandschaft. Im Bericht des 1. Vorsitzenden R
                     </tableView>
                     <navigationItem key="navigationItem" id="iTN-xB-hbT"/>
                     <connections>
-                        <segue destination="OVk-vf-dAy" kind="show" id="38w-9h-QWo"/>
+                        <segue destination="OVk-vf-dAy" kind="show" identifier="toGewaesser" id="38w-9h-QWo"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5w-hK-QK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -636,10 +854,12 @@ Danach folgten die Berichte der Vorstandschaft. Im Bericht des 1. Vorsitzenden R
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9Xq-Vf-Ggu"/>
+        <segue reference="38w-9h-QWo"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
+        <image name="Schauffele" width="1766" height="1194"/>
+        <image name="SchauffeleBild" width="1600" height="350"/>
         <image name="figure.fishing" catalog="system" width="128" height="99"/>
         <image name="fish" catalog="system" width="128" height="100"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
