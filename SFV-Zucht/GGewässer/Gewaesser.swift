@@ -11,13 +11,13 @@ struct Gewaesser{
     
     var gewaesserPic: UIImage
     var gewaesserName: String
-    var lageTextView: String
+    var lageTextViews: String
     var gewaesserGroesseTextView: String
     var besonderheitenTextView: String
     var gewaesserInfo: String
     var gewaesserKartePic: UIImage
     
 }
-var schauffele = Gewaesser(gewaesserPic: UIImage(named: "SchauffeleBild")!, gewaesserName: "Schauffele", lageTextView: "", gewaesserGroesseTextView: "", besonderheitenTextView: "", gewaesserInfo: "", gewaesserKartePic: UIImage(named: "Schauffele")!)
+var schauffele = Gewaesser(gewaesserPic: UIImage(named: "SchauffeleBild")!, gewaesserName: "Schauffele", lageTextViews: "", gewaesserGroesseTextView: "", besonderheitenTextView: "", gewaesserInfo: "", gewaesserKartePic: UIImage(named: "Schauffele")!)
 
 var gewaesser_array: Array = [schauffele]

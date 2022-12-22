@@ -10,10 +10,10 @@ import UIKit
 class GewaesserAnsichtViewController: UIViewController {
     
     @IBOutlet weak var gewaesserName: UILabel!
-    @IBOutlet weak var lageTextView: UILabel!
-    @IBOutlet weak var gewaesserGroesseTextView: UILabel!
-    @IBOutlet weak var besonderheitenTextView: UILabel!
-    @IBOutlet weak var gewaesserInfo: UILabel!
+    @IBOutlet weak var lageTextViews: UITextView!
+    @IBOutlet weak var gewaesserGroesseTextView: UITextView!
+    @IBOutlet weak var besonderheitenTextView: UITextView!
+    @IBOutlet weak var gewaesserInfo: UITextView!
     @IBOutlet weak var gewaesserKartePic: UIImageView!
     @IBOutlet weak var gewaesserPic: UIImageView!
     
@@ -23,7 +23,7 @@ class GewaesserAnsichtViewController: UIViewController {
         super.viewDidLoad()
         
         gewaesserName.text = gewaesser.gewaesserName
-        lageTextView.text = gewaesser.lageTextView
+        lageTextViews.text = gewaesser.lageTextViews
         gewaesserGroesseTextView.text = gewaesser.gewaesserGroesseTextView
         besonderheitenTextView.text = gewaesser.besonderheitenTextView
         gewaesserInfo.text = gewaesser.gewaesserInfo
