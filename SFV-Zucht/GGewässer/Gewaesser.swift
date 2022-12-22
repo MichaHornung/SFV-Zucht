@@ -18,3 +18,6 @@ struct Gewaesser{
     var gewaesserKartePic: UIImage
     
 }
+var schauffele = Gewaesser(gewaesserPic: UIImage(named: "SchauffeleBild")!, gewaesserName: "Schauffele", lageTextView: "", gewaesserGroesseTextView: "", besonderheitenTextView: "", gewaesserInfo: "", gewaesserKartePic: UIImage(named: "Schauffele")!)
+
+var gewaesser_array: Array = [schauffele]

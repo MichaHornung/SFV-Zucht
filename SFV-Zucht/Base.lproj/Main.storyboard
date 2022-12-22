@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DaR-gd-bIZ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -144,16 +144,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAb-67-fyv" userLabel="GewaesserView">
                                                 <rect key="frame" x="0.0" y="136" width="393" height="80"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gewässer Schauffele" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clV-sv-7SG" userLabel="GewaesserName">
-                                                        <rect key="frame" x="72" y="8" width="248" height="30"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gewässer Schauffele" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clV-sv-7SG" userLabel="GewaesserName">
+                                                        <rect key="frame" x="72" y="8" width="249" height="30"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vko-Oj-iBc">
-                                                        <rect key="frame" x="8" y="54" width="42" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vko-Oj-iBc">
+                                                        <rect key="frame" x="8" y="54.000000000000007" width="42" height="20.333333333333336"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -163,15 +161,20 @@
                                                 <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstItem="clV-sv-7SG" firstAttribute="top" secondItem="EAb-67-fyv" secondAttribute="topMargin" id="4uy-TU-x2L"/>
+                                                    <constraint firstItem="X6d-rr-TXY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Vko-Oj-iBc" secondAttribute="trailing" symbolic="YES" id="DTx-ys-4SP"/>
+                                                    <constraint firstItem="clV-sv-7SG" firstAttribute="centerX" secondItem="EAb-67-fyv" secondAttribute="centerX" id="Mv8-Vd-grs"/>
+                                                    <constraint firstItem="Vko-Oj-iBc" firstAttribute="leading" secondItem="EAb-67-fyv" secondAttribute="leadingMargin" id="iA4-mX-ueF"/>
+                                                    <constraint firstItem="clV-sv-7SG" firstAttribute="leading" secondItem="X6d-rr-TXY" secondAttribute="leading" constant="72" id="q3J-ap-hC9"/>
+                                                    <constraint firstItem="Vko-Oj-iBc" firstAttribute="top" secondItem="X6d-rr-TXY" secondAttribute="top" constant="54" id="s0K-P7-CnT"/>
                                                     <constraint firstAttribute="height" constant="80" id="xQY-iV-AlN"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eoI-dD-k4B">
                                                 <rect key="frame" x="0.0" y="224" width="393" height="128"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhg-mm-iNh" userLabel="LageTextView">
-                                                        <rect key="frame" x="175" y="46" width="42" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhg-mm-iNh" userLabel="LageTextView">
+                                                        <rect key="frame" x="176" y="46" width="41.333333333333343" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -180,15 +183,16 @@
                                                 <color key="backgroundColor" red="0.1647058874" green="0.2235293984" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstItem="Mhg-mm-iNh" firstAttribute="top" secondItem="eoI-dD-k4B" secondAttribute="top" constant="46" id="55L-1r-9he"/>
+                                                    <constraint firstItem="Mhg-mm-iNh" firstAttribute="centerX" secondItem="eoI-dD-k4B" secondAttribute="centerX" id="HhU-fC-1Ar"/>
                                                     <constraint firstAttribute="height" constant="128" id="xgM-kI-qnn"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwJ-71-1M5" userLabel="LabelGewaessergroesseView">
                                                 <rect key="frame" x="0.0" y="360" width="393" height="40"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gewässergröße:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSj-tO-JRf">
-                                                        <rect key="frame" x="8" y="8" width="125" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gewässergröße:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSj-tO-JRf">
+                                                        <rect key="frame" x="7.9999999999999929" y="7.9999999999999982" width="124.33333333333331" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -197,15 +201,17 @@
                                                 <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hSj-tO-JRf" secondAttribute="trailing" constant="20" symbolic="YES" id="7Zb-wk-bM3"/>
+                                                    <constraint firstItem="hSj-tO-JRf" firstAttribute="leading" secondItem="zwJ-71-1M5" secondAttribute="leadingMargin" id="JXc-Bj-Tv8"/>
                                                     <constraint firstAttribute="height" constant="40" id="Xgm-vO-GVo"/>
+                                                    <constraint firstItem="hSj-tO-JRf" firstAttribute="top" secondItem="zwJ-71-1M5" secondAttribute="topMargin" id="dKd-WE-AmC"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evU-8b-uKp" userLabel="GewaessergroesseTextView">
                                                 <rect key="frame" x="0.0" y="408" width="393" height="128"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehZ-ap-IXy">
-                                                        <rect key="frame" x="115" y="54" width="174" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehZ-ap-IXy">
+                                                        <rect key="frame" x="115.00000000000001" y="54" width="173.33333333333337" height="20"/>
                                                         <string key="text">ca.30 ha Wasserfläche
 
 </string>
@@ -217,15 +223,18 @@
                                                 <color key="backgroundColor" red="0.1647058874" green="0.2235293984" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstItem="ehZ-ap-IXy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="evU-8b-uKp" secondAttribute="leading" symbolic="YES" id="EVN-1p-tFd"/>
+                                                    <constraint firstItem="ehZ-ap-IXy" firstAttribute="centerY" secondItem="evU-8b-uKp" secondAttribute="centerY" id="Fir-70-jKS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ehZ-ap-IXy" secondAttribute="trailing" constant="104.66666666666663" id="PqS-dC-Uw7"/>
+                                                    <constraint firstItem="ehZ-ap-IXy" firstAttribute="top" secondItem="evU-8b-uKp" secondAttribute="top" constant="54" id="Wvd-og-OEY"/>
                                                     <constraint firstAttribute="height" constant="128" id="ivT-7h-wka"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDt-HZ-pQc" userLabel="BesonderheitenView">
                                                 <rect key="frame" x="0.0" y="544" width="393" height="40"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Besonderheiten:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QI9-wK-xv6">
-                                                        <rect key="frame" x="0.0" y="8" width="125" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Besonderheiten:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QI9-wK-xv6">
+                                                        <rect key="frame" x="0.0" y="7.9999999999999982" width="124.66666666666667" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -235,14 +244,16 @@
                                                 <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Bv2-XG-vRV"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QI9-wK-xv6" secondAttribute="trailing" constant="20" symbolic="YES" id="Eq2-xE-6Lo"/>
+                                                    <constraint firstItem="QI9-wK-xv6" firstAttribute="top" secondItem="fDt-HZ-pQc" secondAttribute="topMargin" id="pCs-oC-Nz3"/>
+                                                    <constraint firstItem="QI9-wK-xv6" firstAttribute="leading" secondItem="fDt-HZ-pQc" secondAttribute="leading" id="yCn-ad-uBG"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDA-b0-KnI" userLabel="BesonderheitenTextView">
                                                 <rect key="frame" x="0.0" y="592" width="393" height="150"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyE-nA-Mdw" userLabel="BesonderheitenTextView">
-                                                        <rect key="frame" x="175" y="65" width="42" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyE-nA-Mdw" userLabel="BesonderheitenTextView">
+                                                        <rect key="frame" x="176" y="65" width="41.333333333333343" height="20"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -252,14 +263,16 @@
                                                 <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="2eQ-aq-lgQ"/>
+                                                    <constraint firstItem="FyE-nA-Mdw" firstAttribute="centerX" secondItem="eDA-b0-KnI" secondAttribute="centerX" id="HHT-Lb-g06"/>
+                                                    <constraint firstItem="FyE-nA-Mdw" firstAttribute="top" secondItem="eDA-b0-KnI" secondAttribute="top" constant="65" id="Tqv-EA-wkY"/>
+                                                    <constraint firstItem="FyE-nA-Mdw" firstAttribute="centerY" secondItem="eDA-b0-KnI" secondAttribute="centerY" id="sfg-3U-hNp"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QcF-Hc-erJ" userLabel="GewaesserInfoView">
                                                 <rect key="frame" x="0.0" y="750" width="393" height="40"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gewässerinfo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pA-4c-VKG">
-                                                        <rect key="frame" x="8" y="8" width="108" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gewässerinfo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pA-4c-VKG">
+                                                        <rect key="frame" x="8" y="7.9999999999999982" width="108" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -268,15 +281,17 @@
                                                 <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9pA-4c-VKG" secondAttribute="trailing" constant="20" symbolic="YES" id="H3w-Oi-Nrz"/>
+                                                    <constraint firstItem="9pA-4c-VKG" firstAttribute="leading" secondItem="QcF-Hc-erJ" secondAttribute="leadingMargin" id="Hof-EQ-Qoy"/>
                                                     <constraint firstAttribute="height" constant="40" id="i9E-lB-716"/>
+                                                    <constraint firstItem="9pA-4c-VKG" firstAttribute="top" secondItem="QcF-Hc-erJ" secondAttribute="topMargin" id="mS9-uK-sed"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfm-6d-FR2" userLabel="GewaesserInfoTextView">
                                                 <rect key="frame" x="0.0" y="798" width="393" height="330"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0z-LP-uQM" userLabel="gewaesserInfo">
-                                                        <rect key="frame" x="175" y="147" width="42" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0z-LP-uQM" userLabel="gewaesserInfo">
+                                                        <rect key="frame" x="176" y="147" width="41.333333333333343" height="20.333333333333343"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -285,21 +300,26 @@
                                                 <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstItem="C0z-LP-uQM" firstAttribute="top" secondItem="sfm-6d-FR2" secondAttribute="top" constant="147" id="1a0-gg-Ff1"/>
+                                                    <constraint firstItem="C0z-LP-uQM" firstAttribute="centerX" secondItem="sfm-6d-FR2" secondAttribute="centerX" id="eIO-iu-qJh"/>
                                                     <constraint firstAttribute="height" constant="330" id="kyA-zf-n8Y"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSM-xR-aJT" userLabel="KarteView">
                                                 <rect key="frame" x="0.0" y="1136" width="393" height="300"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Schauffele" translatesAutoresizingMaskIntoConstraints="NO" id="neg-xz-fbj">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Schauffele" translatesAutoresizingMaskIntoConstraints="NO" id="neg-xz-fbj">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstItem="neg-xz-fbj" firstAttribute="centerY" secondItem="bSM-xR-aJT" secondAttribute="centerY" id="Iev-g4-6fJ"/>
+                                                    <constraint firstItem="neg-xz-fbj" firstAttribute="leading" secondItem="bSM-xR-aJT" secondAttribute="leading" id="U5A-v9-kFq"/>
+                                                    <constraint firstItem="neg-xz-fbj" firstAttribute="centerX" secondItem="bSM-xR-aJT" secondAttribute="centerX" id="dGq-sB-dB2"/>
                                                     <constraint firstAttribute="height" constant="300" id="fyR-Vr-eqJ"/>
+                                                    <constraint firstItem="neg-xz-fbj" firstAttribute="top" secondItem="bSM-xR-aJT" secondAttribute="top" id="qtN-kk-scd"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -341,7 +361,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vEc-P3-ZVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1585.4961832061067" y="1359.8591549295775"/>
+            <point key="canvasLocation" x="1430" y="1760"/>
         </scene>
         <!--Fangliste-->
         <scene sceneID="vIL-Rj-SIi">
@@ -774,24 +794,23 @@ Danach folgten die Berichte der Vorstandschaft. Im Bericht des 1. Vorsitzenden R
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="OVk-vf-dAy" kind="relationship" relationship="rootViewController" id="9Xq-Vf-Ggu"/>
-                        <segue destination="QXu-YT-exS" kind="show" id="T3r-OA-tX5"/>
+                        <segue destination="QXu-YT-exS" kind="showDetail" id="hQ0-Ks-SYz"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRC-Pb-0rg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="873" y="1360"/>
+            <point key="canvasLocation" x="613" y="1360"/>
         </scene>
         <!--Gewaesser Table View Controller-->
         <scene sceneID="Zkh-vU-Yyf">
             <objects>
-                <tableViewController id="QXu-YT-exS" userLabel="Gewaesser Table View Controller" customClass="GewaesserTableViewController" customModule="SFV_Zucht" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="QXu-YT-exS" userLabel="Gewaesser Table View Controller" customClass="GewaesserTableViewController" customModule="SFV_Zucht" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="7AD-yO-20O" userLabel="GewaesserView">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GHb-h5-hlK">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GewaesserCell" id="GHb-h5-hlK">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GHb-h5-hlK" id="Tiv-8O-beJ">
@@ -801,18 +820,19 @@ Danach folgten die Berichte der Vorstandschaft. Im Bericht des 1. Vorsitzenden R
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="QXu-YT-exS" id="EgP-XJ-cqx"/>
-                            <outlet property="delegate" destination="QXu-YT-exS" id="HPa-UJ-z2g"/>
+                            <outlet property="dataSource" destination="QXu-YT-exS" id="Hbk-4f-jla"/>
+                            <outlet property="delegate" destination="QXu-YT-exS" id="WHa-ME-Kl3"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="iTN-xB-hbT"/>
                     <connections>
-                        <segue destination="OVk-vf-dAy" kind="show" identifier="toGewaesser" id="38w-9h-QWo"/>
+                        <outlet property="gewaesserView" destination="7AD-yO-20O" id="8aE-xT-6Wo"/>
+                        <segue destination="OVk-vf-dAy" kind="show" identifier="showGewaesser" id="38w-9h-QWo"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5w-hK-QK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="891" y="2013"/>
+            <point key="canvasLocation" x="613" y="2037"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rOv-eP-kdp">
@@ -853,9 +873,6 @@ Danach folgten die Berichte der Vorstandschaft. Im Bericht des 1. Vorsitzenden R
             <point key="canvasLocation" x="3365.6488549618321" y="-337.32394366197184"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="38w-9h-QWo"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <image name="Schauffele" width="1766" height="1194"/>
