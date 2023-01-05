@@ -11,6 +11,7 @@
 		BA0AED1629536494007D5E36 /* GewaesserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0AED1529536494007D5E36 /* GewaesserTableViewController.swift */; };
 		BA0AED18295364D3007D5E36 /* GewaesserAnsichtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0AED17295364D3007D5E36 /* GewaesserAnsichtViewController.swift */; };
 		BA0AED1A29536500007D5E36 /* Gewaesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0AED1929536500007D5E36 /* Gewaesser.swift */; };
+		BA3F445E2965ADBC0035ACF5 /* AddFanglisteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F445D2965ADBC0035ACF5 /* AddFanglisteViewController.swift */; };
 		BAC25E2D294DEF9600A57BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E2C294DEF9600A57BBA /* AppDelegate.swift */; };
 		BAC25E2F294DEF9600A57BBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E2E294DEF9600A57BBA /* SceneDelegate.swift */; };
 		BAC25E31294DEF9600A57BBA /* Login ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E30294DEF9600A57BBA /* Login ViewController.swift */; };
@@ -20,6 +21,12 @@
 		BAC25E3C294DEF9700A57BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC25E3A294DEF9700A57BBA /* LaunchScreen.storyboard */; };
 		BAC25E4B294E5EF100A57BBA /* Vorstand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E4A294E5EF100A57BBA /* Vorstand.swift */; };
 		BAC25E55294E860800A57BBA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E54294E860800A57BBA /* TabBarViewController.swift */; };
+		BAEC7D362965740100B6D669 /* FanglisteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC7D352965740100B6D669 /* FanglisteViewController.swift */; };
+		BAEC7D382965745500B6D669 /* FanglisteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC7D372965745500B6D669 /* FanglisteTableViewController.swift */; };
+		BAEC7D3A2965749900B6D669 /* Fangliste.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC7D392965749900B6D669 /* Fangliste.swift */; };
+		BAEC7D3C2965750700B6D669 /* MitgliederbereichTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC7D3B2965750700B6D669 /* MitgliederbereichTableViewController.swift */; };
+		BAEC7D3E2965753900B6D669 /* MitgliederbereichViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC7D3D2965753900B6D669 /* MitgliederbereichViewController.swift */; };
+		BAEC7D402965757300B6D669 /* Mitgliederbereich.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC7D3F2965757300B6D669 /* Mitgliederbereich.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +34,7 @@
 		BA0AED1529536494007D5E36 /* GewaesserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GewaesserTableViewController.swift; sourceTree = "<group>"; };
 		BA0AED17295364D3007D5E36 /* GewaesserAnsichtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GewaesserAnsichtViewController.swift; sourceTree = "<group>"; };
 		BA0AED1929536500007D5E36 /* Gewaesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gewaesser.swift; sourceTree = "<group>"; };
+		BA3F445D2965ADBC0035ACF5 /* AddFanglisteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFanglisteViewController.swift; sourceTree = "<group>"; };
 		BAC25E29294DEF9600A57BBA /* SFV-Zucht.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SFV-Zucht.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC25E2C294DEF9600A57BBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAC25E2E294DEF9600A57BBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +46,12 @@
 		BAC25E3D294DEF9700A57BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAC25E4A294E5EF100A57BBA /* Vorstand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vorstand.swift; sourceTree = "<group>"; };
 		BAC25E54294E860800A57BBA /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		BAEC7D352965740100B6D669 /* FanglisteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanglisteViewController.swift; sourceTree = "<group>"; };
+		BAEC7D372965745500B6D669 /* FanglisteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanglisteTableViewController.swift; sourceTree = "<group>"; };
+		BAEC7D392965749900B6D669 /* Fangliste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fangliste.swift; sourceTree = "<group>"; };
+		BAEC7D3B2965750700B6D669 /* MitgliederbereichTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitgliederbereichTableViewController.swift; sourceTree = "<group>"; };
+		BAEC7D3D2965753900B6D669 /* MitgliederbereichViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitgliederbereichViewController.swift; sourceTree = "<group>"; };
+		BAEC7D3F2965757300B6D669 /* Mitgliederbereich.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mitgliederbereich.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +124,10 @@
 		BAC25E45294E4C8D00A57BBA /* Fangliste */ = {
 			isa = PBXGroup;
 			children = (
+				BAEC7D352965740100B6D669 /* FanglisteViewController.swift */,
+				BAEC7D372965745500B6D669 /* FanglisteTableViewController.swift */,
+				BAEC7D392965749900B6D669 /* Fangliste.swift */,
+				BA3F445D2965ADBC0035ACF5 /* AddFanglisteViewController.swift */,
 			);
 			path = Fangliste;
 			sourceTree = "<group>";
@@ -117,6 +135,9 @@
 		BAC25E46294E4C9D00A57BBA /* Mitgliederbereich */ = {
 			isa = PBXGroup;
 			children = (
+				BAEC7D3B2965750700B6D669 /* MitgliederbereichTableViewController.swift */,
+				BAEC7D3D2965753900B6D669 /* MitgliederbereichViewController.swift */,
+				BAEC7D3F2965757300B6D669 /* Mitgliederbereich.swift */,
 			);
 			path = Mitgliederbereich;
 			sourceTree = "<group>";
@@ -203,13 +224,20 @@
 				BA0AED18295364D3007D5E36 /* GewaesserAnsichtViewController.swift in Sources */,
 				BA09482D294F3455008CD9CB /* VorstandSFVViewController.swift in Sources */,
 				BA0AED1A29536500007D5E36 /* Gewaesser.swift in Sources */,
+				BAEC7D382965745500B6D669 /* FanglisteTableViewController.swift in Sources */,
+				BAEC7D3E2965753900B6D669 /* MitgliederbereichViewController.swift in Sources */,
+				BAEC7D3A2965749900B6D669 /* Fangliste.swift in Sources */,
+				BAEC7D362965740100B6D669 /* FanglisteViewController.swift in Sources */,
 				BAC25E31294DEF9600A57BBA /* Login ViewController.swift in Sources */,
 				BA0AED1629536494007D5E36 /* GewaesserTableViewController.swift in Sources */,
+				BA3F445E2965ADBC0035ACF5 /* AddFanglisteViewController.swift in Sources */,
 				BAC25E2D294DEF9600A57BBA /* AppDelegate.swift in Sources */,
+				BAEC7D402965757300B6D669 /* Mitgliederbereich.swift in Sources */,
 				BAC25E37294DEF9600A57BBA /* SFV_Zucht.xcdatamodeld in Sources */,
 				BAC25E4B294E5EF100A57BBA /* Vorstand.swift in Sources */,
 				BAC25E55294E860800A57BBA /* TabBarViewController.swift in Sources */,
 				BAC25E2F294DEF9600A57BBA /* SceneDelegate.swift in Sources */,
+				BAEC7D3C2965750700B6D669 /* MitgliederbereichTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
