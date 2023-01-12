@@ -5,4 +5,11 @@
 //  Created by Michael Hornung on 04.01.23.
 //
 
-import Foundation
+import UIKit
+
+struct Fangliste{
+    var datum: String
+    var fischart: String
+    var gewicht: String
+    var stueckzahl: String
+}

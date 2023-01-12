@@ -6,24 +6,29 @@
 //
 
 import UIKit
+import PDFKit
 
 class MitgliederbereichViewController: UIViewController {
 
+    @IBOutlet weak var pdfView: PDFView!
+    
+    var mitgliederbereich: String!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+  
+        let document = PDFDocument()
+        guard let imageOne = UIImage(named: "Fangnachweis") else {return}
+        guard let imageTwo = UIImage(named: "Rundschreiben 2018") else {return}
+        guard let pageOne = PDFPage(image: imageOne) else {return}
+        guard let pageTwo = PDFPage(image: imageTwo) else {return}
+        document.insert(pageOne, at: 0)
+        document.insert(pageTwo, at: 1)
+        pdfView.document = document
+        pdfView.autoScales = true
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+        
+        
+

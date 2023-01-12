@@ -12,6 +12,10 @@
 		BA0AED18295364D3007D5E36 /* GewaesserAnsichtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0AED17295364D3007D5E36 /* GewaesserAnsichtViewController.swift */; };
 		BA0AED1A29536500007D5E36 /* Gewaesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0AED1929536500007D5E36 /* Gewaesser.swift */; };
 		BA3F445E2965ADBC0035ACF5 /* AddFanglisteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F445D2965ADBC0035ACF5 /* AddFanglisteViewController.swift */; };
+		BA3F446029681AF60035ACF5 /* FanglisteHinzufügenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F445F29681AF60035ACF5 /* FanglisteHinzufügenViewController.swift */; };
+		BAAB0EB829701D9D006FADCD /* FanglisteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAB0EB729701D9D006FADCD /* FanglisteTableViewCell.swift */; };
+		BAAB0EBA29704EC6006FADCD /* Fangnachweis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BAAB0EB929704EC6006FADCD /* Fangnachweis.pdf */; };
+		BAAB0EBC29704ED0006FADCD /* Rundschreiben 2018.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BAAB0EBB29704ED0006FADCD /* Rundschreiben 2018.pdf */; };
 		BAC25E2D294DEF9600A57BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E2C294DEF9600A57BBA /* AppDelegate.swift */; };
 		BAC25E2F294DEF9600A57BBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E2E294DEF9600A57BBA /* SceneDelegate.swift */; };
 		BAC25E31294DEF9600A57BBA /* Login ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E30294DEF9600A57BBA /* Login ViewController.swift */; };
@@ -35,6 +39,10 @@
 		BA0AED17295364D3007D5E36 /* GewaesserAnsichtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GewaesserAnsichtViewController.swift; sourceTree = "<group>"; };
 		BA0AED1929536500007D5E36 /* Gewaesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gewaesser.swift; sourceTree = "<group>"; };
 		BA3F445D2965ADBC0035ACF5 /* AddFanglisteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFanglisteViewController.swift; sourceTree = "<group>"; };
+		BA3F445F29681AF60035ACF5 /* FanglisteHinzufügenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FanglisteHinzufügenViewController.swift"; sourceTree = "<group>"; };
+		BAAB0EB729701D9D006FADCD /* FanglisteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanglisteTableViewCell.swift; sourceTree = "<group>"; };
+		BAAB0EB929704EC6006FADCD /* Fangnachweis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Fangnachweis.pdf; sourceTree = "<group>"; };
+		BAAB0EBB29704ED0006FADCD /* Rundschreiben 2018.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Rundschreiben 2018.pdf"; sourceTree = "<group>"; };
 		BAC25E29294DEF9600A57BBA /* SFV-Zucht.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SFV-Zucht.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC25E2C294DEF9600A57BBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAC25E2E294DEF9600A57BBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +105,8 @@
 				BAC25E3D294DEF9700A57BBA /* Info.plist */,
 				BAC25E35294DEF9600A57BBA /* SFV_Zucht.xcdatamodeld */,
 				BAC25E54294E860800A57BBA /* TabBarViewController.swift */,
+				BAAB0EB929704EC6006FADCD /* Fangnachweis.pdf */,
+				BAAB0EBB29704ED0006FADCD /* Rundschreiben 2018.pdf */,
 			);
 			path = "SFV-Zucht";
 			sourceTree = "<group>";
@@ -128,6 +138,8 @@
 				BAEC7D372965745500B6D669 /* FanglisteTableViewController.swift */,
 				BAEC7D392965749900B6D669 /* Fangliste.swift */,
 				BA3F445D2965ADBC0035ACF5 /* AddFanglisteViewController.swift */,
+				BA3F445F29681AF60035ACF5 /* FanglisteHinzufügenViewController.swift */,
+				BAAB0EB729701D9D006FADCD /* FanglisteTableViewCell.swift */,
 			);
 			path = Fangliste;
 			sourceTree = "<group>";
@@ -208,7 +220,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAAB0EBA29704EC6006FADCD /* Fangnachweis.pdf in Resources */,
 				BAC25E3C294DEF9700A57BBA /* LaunchScreen.storyboard in Resources */,
+				BAAB0EBC29704ED0006FADCD /* Rundschreiben 2018.pdf in Resources */,
 				BAC25E39294DEF9700A57BBA /* Assets.xcassets in Resources */,
 				BAC25E34294DEF9600A57BBA /* Main.storyboard in Resources */,
 			);
@@ -234,7 +248,9 @@
 				BAC25E2D294DEF9600A57BBA /* AppDelegate.swift in Sources */,
 				BAEC7D402965757300B6D669 /* Mitgliederbereich.swift in Sources */,
 				BAC25E37294DEF9600A57BBA /* SFV_Zucht.xcdatamodeld in Sources */,
+				BAAB0EB829701D9D006FADCD /* FanglisteTableViewCell.swift in Sources */,
 				BAC25E4B294E5EF100A57BBA /* Vorstand.swift in Sources */,
+				BA3F446029681AF60035ACF5 /* FanglisteHinzufügenViewController.swift in Sources */,
 				BAC25E55294E860800A57BBA /* TabBarViewController.swift in Sources */,
 				BAC25E2F294DEF9600A57BBA /* SceneDelegate.swift in Sources */,
 				BAEC7D3C2965750700B6D669 /* MitgliederbereichTableViewController.swift in Sources */,
