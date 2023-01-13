@@ -68,6 +68,8 @@ class GewaesserTableViewController: UITableViewController {
         
         gewaesserView.dataSource = self
         gewaesserView.delegate = self
+        
+        navigationItem.title = "Gewässer"
 
     }
    

@@ -364,6 +364,34 @@
             </objects>
             <point key="canvasLocation" x="613" y="2725"/>
         </scene>
+        <!--MBE Table View Controller-->
+        <scene sceneID="ThD-yg-yKL">
+            <objects>
+                <tableViewController id="TFt-9G-DMi" userLabel="MBE Table View Controller" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="siz-aO-QgL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="utE-Ze-dQ4">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="utE-Ze-dQ4" id="GwN-z5-t9Y">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="TFt-9G-DMi" id="cVW-x0-ALx"/>
+                            <outlet property="delegate" destination="TFt-9G-DMi" id="DFy-7c-aCh"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dOb-Kb-QsF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1369" y="2725"/>
+        </scene>
         <!--Fangliste View Controller-->
         <scene sceneID="vIL-Rj-SIi">
             <objects>
@@ -687,11 +715,12 @@ Quelle: Impressum und Disclamer von eRecht24</string>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="pdfView" destination="5BQ-cY-dPV" id="lch-QK-HwC"/>
+                        <outlet property="ueberschrift" destination="l30-JT-cKX" id="ICj-Jm-2F7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kCU-3c-UUn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1368.7022900763359" y="2724.6478873239439"/>
+            <point key="canvasLocation" x="1425" y="3396"/>
         </scene>
         <!--vorstand-->
         <scene sceneID="k2g-7i-18O">

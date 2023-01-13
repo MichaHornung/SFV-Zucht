@@ -11,6 +11,15 @@ import PDFKit
 class MitgliederbereichViewController: UIViewController {
 
     @IBOutlet weak var pdfView: PDFView!
+    @IBOutlet weak var ueberschrift: UILabel!
+    
+    let einladungen = [""]
+    var einladungenPDF = [
+        PDF(ueberschrift: "")]
+    
+    
+    
+    
     
     var mitgliederbereich: String!
     override func viewDidLoad() {

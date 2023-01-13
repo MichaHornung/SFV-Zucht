@@ -18,6 +18,7 @@ class Fangliste__TableViewController: UITableViewController {
         tableView.dataSource = self
         tableView.delegate = self
         super.viewDidLoad()
+      
 
 
     }

@@ -11,9 +11,15 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let navController = UINavigationController(rootViewController: TabBarViewController())
+        
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        window?.rootViewController = navController
         // Override point for customization after application launch.
         return true
     }

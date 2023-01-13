@@ -16,6 +16,7 @@ class Fangliste_ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.title = "Fangliste"
     }
     
 

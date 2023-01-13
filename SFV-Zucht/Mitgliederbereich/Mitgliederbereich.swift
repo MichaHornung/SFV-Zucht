@@ -12,4 +12,6 @@ struct Mitgliederbereich{
     
     var pdfLabel: String
     var pdfView: PDFView
+
 }
+
