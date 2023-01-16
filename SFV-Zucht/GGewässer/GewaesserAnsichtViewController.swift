@@ -21,8 +21,7 @@ class GewaesserAnsichtViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
+
         
         gewaesserName.text = gewaesser.gewaesserName
         lageTextViews.text = gewaesser.lageTextViews

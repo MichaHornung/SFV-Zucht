@@ -58,6 +58,8 @@ class FanglisteHinzufu_genViewController: UIViewController, UITableViewDelegate,
         case 1:  selectedFische = schleie[indexPath.row]
         case 2:  selectedFische = aal[indexPath.row]
         case 3:  selectedFische = hecht[indexPath.row]
+        case 4:  selectedFische = zander[indexPath.row]
+        case 5:  selectedFische = barsch[indexPath.row]
         default: break
       
         }
@@ -65,7 +67,7 @@ class FanglisteHinzufu_genViewController: UIViewController, UITableViewDelegate,
     }
     
      func numberOfSections(in fanglistetableView: UITableView) -> Int {
-        return 4
+        return 6
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section{
@@ -73,6 +75,8 @@ class FanglisteHinzufu_genViewController: UIViewController, UITableViewDelegate,
         case 1: return schleie.count
         case 2: return aal.count
         case 3: return hecht.count
+        case 4: return zander.count
+        case 5: return barsch.count
         default:
             return 0
         }
@@ -91,6 +95,10 @@ class FanglisteHinzufu_genViewController: UIViewController, UITableViewDelegate,
             fischeNamen = aal[indexPath.row].datum
         case 3:
             fischeNamen = hecht[indexPath.row].datum
+        case 4:
+            fischeNamen = zander[indexPath.row].datum
+        case 5:
+            fischeNamen = barsch[indexPath.row].datum
         default:
             fischeNamen = ""
         }
@@ -118,6 +126,10 @@ class FanglisteHinzufu_genViewController: UIViewController, UITableViewDelegate,
             return "Aal"
         case 3:
             return "Hecht"
+        case 4:
+            return "Zander"
+        case 5:
+            return "Barsch"
         default:
             return nil
         }

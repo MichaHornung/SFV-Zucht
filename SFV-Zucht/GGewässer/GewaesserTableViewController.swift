@@ -70,6 +70,7 @@ class GewaesserTableViewController: UITableViewController {
         gewaesserView.delegate = self
         
         navigationItem.title = "Gewässer"
+        
 
     }
    
@@ -129,6 +130,8 @@ class GewaesserTableViewController: UITableViewController {
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let gewaesserCell = tableView.dequeueReusableCell(withIdentifier:"GewaesserCell", for: indexPath)
             
+            
+            
             var gewaesserNamen: String
             var gewaesserBild: UIImage
             switch indexPath.section{
@@ -168,6 +171,12 @@ class GewaesserTableViewController: UITableViewController {
             
         }
         override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+            
+            
+            let button = UIButton()
+        
+            button.setTitleColor(.cyan, for: .normal)
+            
             switch section{
             case 0:
                 return "Schauffele"
