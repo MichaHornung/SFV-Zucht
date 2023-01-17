@@ -71,7 +71,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJL-UM-IJd">
-                                        <rect key="frame" x="14.333333333333343" y="88.333333333333371" width="118.33333333333331" height="34.333333333333343"/>
+                                        <rect key="frame" x="14.333333333333336" y="88.333333333333371" width="118.33333333333331" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Login Admin" cornerStyle="capsule">
                                             <color key="baseBackgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -796,64 +796,61 @@ Quelle: Impressum und Disclamer von eRecht24</string>
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="g1m-kq-CGg">
-                                <rect key="frame" x="16" y="334" width="361" height="426"/>
-                                <color key="backgroundColor" red="0.1647058874" green="0.2235293984" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <string key="text">Liebe Mitglieder, liebe Petrijünger,
-mit diesem Rundschreiben möchten wir euch eine Zusammenfassung der Generalversammlung 2022 mit Vorstandswahl, den wichtigsten Ereignissen seitdem und gleichzeitig die
-Einladung für die Jahreshauptversammlung 2023 zukommen lassen.
-Generalversammlung 2022:
-Zunächst für alle Mitglieder des SFV die bei der Generalversammlung 2022 nicht anwesend sein konnten eine kurze Zusammenfassung der Beschlüsse sowie das Ergebnis der Vorstandswahlen: Nach der Begrüßung der anwesenden Mitglieder und Feststellung der Beschlussfähigkeit, wurde den verstorbenen Mitgliedern Reinhard Barbey, Horst Börckel, Michael Brust, Herbert Humbert, Gerold Kiefer, Günter Paul Knust, Bernhard Krucker, Narziss Marz, Franz Pfirrmann, Helmuth Pircsak, Robert Roth, Günter Weinhardt, Helmut Wilhelm sowie Jür- gen Wüst gedacht. Wir werden den Verstorbenen ein ehrendesGedenken bewahren.
-Da von Seiten der Mitglieder keine Anträge auf Änderung der Tagesordnung gestellt wurden, konnte wie geplant mit den Ehrungen fortgefahren werden, die, aufgrund der zwei wegen Corona ausgefallenen Versammlungen, 2022 besonders umfangreich ausfielen.
-Für die 25-jährige Mitgliedschaft wurden (soweit anwesend) mit einer Urkunde, der Ehrennadel und einem Weinpräsent geehrt:
-Knöll Thomas, Schwein Reinhold, Kux Bernd, Kaiser Johann, Balzer Rudolf, Daum Bruno, Simon Gerhard, Paul Matthias, Heilmann Roland, Winstel Wolfgang und Frey Patrick.
-Für die 40-jährige Mitgliedschaft wurden (soweit anwesend) mit einem Weinpräsent geehrt:
-Hintz Michael, Weisgerber Bruno, Hessert Stefan, Stöffler Margareta, Herrmann Günter, Scheurer Stefan, Wüst Thomas, Lutz Steffen, Klöffer Markus, Demes Ralf, Eck Helga, Graf Franz, Schell Annemarie, und Karcher Volker.
-Für das 50-jährige Jubiläum wurden die Mitglieder Knoblauch Hermann, Scherrer Horst, Star- sinsky Egon, König Dieter, Jäger Günther, Eck Georg, Burger Ernst, Liebel Jürgen, Wärther Kuno, Pfirrmann Harry und Pfirrmann Gerd mit einer Urkunde, einer Ehrennadel und einem Weinpräsent geehrt und zu Ehrenmitgliedern ernannt.
-Im nächsten Tagesordnungspunkt wurde die bereits 2019 angestoßene Satzungsänderung, die vom Vereinsregister aufgrund von Verfahrensmängeln nicht akzeptiert wurde, nochmals einstimmig von den Mitgliedern verabschiedet. Diese wurde bereits in der Einladung ausführlich beschrieben und steht im Zusammenhang mit Sparmaßnahmen aufgrund von Portoerhöhungen der Post sowie Bei- tragsermäßigungen bei Behinderung.
-Wir möchten nochmals ausdrücklich auf die 2023 erfolgende Einstellung des Postversands der Erlaubnisscheine hinweisen. Die Ausgabe der Erlaubnisscheine erfolgt ab 2023 nur noch während der Jahreshauptversammlung und zu den bekannten Öffnungszeiten der Geschäfts- stelle unter Vorlage des gültigen Fischereischeines.
-Danach folgten die Berichte der Vorstandschaft. Im Bericht des 1. Vorsitzenden Roland Heil- mann, wurden die Punkte Jubiläum 100 Jahre SFV Wörth, geplante Aktivitäten 2022, Gewässer- problematiken Altwasser und Hörnel sowie Ehrungen Vorstandsmitglieder angesprochen. </string>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sportfischer- u. Fischzuchtverein Wörth/Rhein" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOA-UB-gdL">
-                                <rect key="frame" x="0.0" y="276" width="393" height="20.333333333333314"/>
+                                <rect key="frame" x="0.0" y="124" width="393" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1922 e. V." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmW-Wh-mdL">
-                                <rect key="frame" x="159" y="305" width="75" height="21"/>
+                                <rect key="frame" x="159" y="152" width="75" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Angelkurier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miY-hI-whY">
-                                <rect key="frame" x="16" y="193" width="361" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="qZo-PY-GB7"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SFV - Wörth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miY-hI-whY">
+                                <rect key="frame" x="16" y="76" width="361" height="75"/>
                                 <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="55"/>
                                 <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySo-JV-7jF">
+                                <rect key="frame" x="83" y="227" width="240" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sKG-bo-cEH">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="sKG-bo-cEH" firstAttribute="centerY" secondItem="ySo-JV-7jF" secondAttribute="centerY" id="T3u-0P-DwM"/>
+                                    <constraint firstItem="sKG-bo-cEH" firstAttribute="leading" secondItem="ySo-JV-7jF" secondAttribute="leading" id="iSE-vu-jbk"/>
+                                    <constraint firstItem="sKG-bo-cEH" firstAttribute="top" secondItem="ySo-JV-7jF" secondAttribute="top" id="oLd-hg-Jh2"/>
+                                    <constraint firstItem="sKG-bo-cEH" firstAttribute="centerX" secondItem="ySo-JV-7jF" secondAttribute="centerX" id="tti-qH-xSy"/>
+                                </constraints>
+                            </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="xWk-yN-Hia">
+                                <rect key="frame" x="145" y="363" width="116" height="26"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mEZ-5m-JGn"/>
                         <color key="backgroundColor" red="0.1647058874" green="0.2235293984" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="oOA-UB-gdL" secondAttribute="trailing" id="1pt-d6-PDN"/>
-                            <constraint firstItem="miY-hI-whY" firstAttribute="leading" secondItem="lLn-p3-oEF" secondAttribute="leadingMargin" id="3pH-9q-epH"/>
-                            <constraint firstItem="oOA-UB-gdL" firstAttribute="leading" secondItem="lLn-p3-oEF" secondAttribute="leading" id="5mh-Wi-vhy"/>
-                            <constraint firstItem="oOA-UB-gdL" firstAttribute="centerX" secondItem="LmW-Wh-mdL" secondAttribute="centerX" id="79y-4U-v0y"/>
-                            <constraint firstItem="miY-hI-whY" firstAttribute="trailing" secondItem="g1m-kq-CGg" secondAttribute="trailing" id="9fn-4w-SQW"/>
-                            <constraint firstItem="mEZ-5m-JGn" firstAttribute="bottom" secondItem="g1m-kq-CGg" secondAttribute="bottom" constant="9" id="F46-d3-3hO"/>
-                            <constraint firstItem="LmW-Wh-mdL" firstAttribute="top" secondItem="oOA-UB-gdL" secondAttribute="bottom" constant="8.6666666666666288" id="NXJ-5r-Pxs"/>
-                            <constraint firstItem="miY-hI-whY" firstAttribute="top" secondItem="mEZ-5m-JGn" secondAttribute="top" constant="134" id="QQl-Cl-VdJ"/>
-                            <constraint firstItem="oOA-UB-gdL" firstAttribute="top" secondItem="miY-hI-whY" secondAttribute="bottom" constant="8" symbolic="YES" id="T5d-tJ-9jJ"/>
-                            <constraint firstItem="miY-hI-whY" firstAttribute="leading" secondItem="g1m-kq-CGg" secondAttribute="leading" id="ixt-4Y-CqC"/>
-                            <constraint firstItem="g1m-kq-CGg" firstAttribute="top" secondItem="LmW-Wh-mdL" secondAttribute="bottom" constant="8" symbolic="YES" id="r29-dJ-d0o"/>
-                            <constraint firstItem="miY-hI-whY" firstAttribute="centerX" secondItem="oOA-UB-gdL" secondAttribute="centerX" id="vJO-RL-F6e"/>
+                            <constraint firstItem="xWk-yN-Hia" firstAttribute="top" secondItem="ySo-JV-7jF" secondAttribute="bottom" constant="8" id="1pG-0n-rzu"/>
+                            <constraint firstItem="ySo-JV-7jF" firstAttribute="leading" secondItem="mEZ-5m-JGn" secondAttribute="leading" constant="83" id="2mJ-A3-yJS"/>
+                            <constraint firstItem="miY-hI-whY" firstAttribute="top" secondItem="mEZ-5m-JGn" secondAttribute="top" constant="17" id="5EA-8t-9ra"/>
+                            <constraint firstItem="LmW-Wh-mdL" firstAttribute="top" secondItem="oOA-UB-gdL" secondAttribute="bottom" constant="7.6666666666666856" id="FK8-bb-WyU"/>
+                            <constraint firstItem="oOA-UB-gdL" firstAttribute="centerX" secondItem="LmW-Wh-mdL" secondAttribute="centerX" id="JXF-6v-7mg"/>
+                            <constraint firstItem="miY-hI-whY" firstAttribute="leading" secondItem="lLn-p3-oEF" secondAttribute="leadingMargin" id="NUD-Jl-jDD"/>
+                            <constraint firstItem="miY-hI-whY" firstAttribute="trailing" secondItem="lLn-p3-oEF" secondAttribute="trailingMargin" id="Vpc-wP-l4b"/>
+                            <constraint firstItem="LmW-Wh-mdL" firstAttribute="top" secondItem="miY-hI-whY" secondAttribute="bottom" constant="1" id="alC-qM-MKh"/>
+                            <constraint firstItem="oOA-UB-gdL" firstAttribute="leading" secondItem="mEZ-5m-JGn" secondAttribute="leading" id="clQ-Xc-BOi"/>
+                            <constraint firstItem="mEZ-5m-JGn" firstAttribute="bottom" secondItem="xWk-yN-Hia" secondAttribute="bottom" constant="380" id="foe-cZ-PZf"/>
+                            <constraint firstItem="miY-hI-whY" firstAttribute="centerX" secondItem="oOA-UB-gdL" secondAttribute="centerX" id="hqA-o5-VeA"/>
+                            <constraint firstItem="ySo-JV-7jF" firstAttribute="top" secondItem="LmW-Wh-mdL" secondAttribute="bottom" constant="54" id="ls9-IC-gA7"/>
+                            <constraint firstItem="xWk-yN-Hia" firstAttribute="leading" secondItem="mEZ-5m-JGn" secondAttribute="leading" constant="145" id="nr4-i5-vfc"/>
+                            <constraint firstItem="ySo-JV-7jF" firstAttribute="centerX" secondItem="xWk-yN-Hia" secondAttribute="centerX" id="qJr-yn-ral"/>
+                            <constraint firstItem="oOA-UB-gdL" firstAttribute="top" secondItem="mEZ-5m-JGn" secondAttribute="top" constant="65" id="uKh-rr-kjX"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Startseite" image="house.fill" catalog="system" id="aFb-Nu-YPr"/>

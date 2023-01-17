@@ -13,6 +13,8 @@
 		BA0AED1A29536500007D5E36 /* Gewaesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0AED1929536500007D5E36 /* Gewaesser.swift */; };
 		BA3F445E2965ADBC0035ACF5 /* AddFanglisteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F445D2965ADBC0035ACF5 /* AddFanglisteViewController.swift */; };
 		BA3F446029681AF60035ACF5 /* FanglisteHinzufügenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F445F29681AF60035ACF5 /* FanglisteHinzufügenViewController.swift */; };
+		BA944A572977428200A771B4 /* Startseite.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA944A562977428200A771B4 /* Startseite.swift */; };
+		BA944A5B297744B200A771B4 /* SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA944A5A297744B200A771B4 /* SwiftUI.swift */; };
 		BAAB0EB829701D9D006FADCD /* FanglisteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAB0EB729701D9D006FADCD /* FanglisteTableViewCell.swift */; };
 		BAAB0EBA29704EC6006FADCD /* Fangnachweis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BAAB0EB929704EC6006FADCD /* Fangnachweis.pdf */; };
 		BAAB0EBC29704ED0006FADCD /* Rundschreiben 2018.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BAAB0EBB29704ED0006FADCD /* Rundschreiben 2018.pdf */; };
@@ -43,6 +45,8 @@
 		BA0AED1929536500007D5E36 /* Gewaesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gewaesser.swift; sourceTree = "<group>"; };
 		BA3F445D2965ADBC0035ACF5 /* AddFanglisteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFanglisteViewController.swift; sourceTree = "<group>"; };
 		BA3F445F29681AF60035ACF5 /* FanglisteHinzufügenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FanglisteHinzufügenViewController.swift"; sourceTree = "<group>"; };
+		BA944A562977428200A771B4 /* Startseite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Startseite.swift; sourceTree = "<group>"; };
+		BA944A5A297744B200A771B4 /* SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI.swift; sourceTree = "<group>"; };
 		BAAB0EB729701D9D006FADCD /* FanglisteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanglisteTableViewCell.swift; sourceTree = "<group>"; };
 		BAAB0EB929704EC6006FADCD /* Fangnachweis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Fangnachweis.pdf; sourceTree = "<group>"; };
 		BAAB0EBB29704ED0006FADCD /* Rundschreiben 2018.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Rundschreiben 2018.pdf"; sourceTree = "<group>"; };
@@ -79,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA944A552977425000A771B4 /* Startseite */ = {
+			isa = PBXGroup;
+			children = (
+				BA944A562977428200A771B4 /* Startseite.swift */,
+				BA944A5A297744B200A771B4 /* SwiftUI.swift */,
+			);
+			path = Startseite;
+			sourceTree = "<group>";
+		};
 		BAC25E20294DEF9600A57BBA = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +114,7 @@
 				BAC25E2E294DEF9600A57BBA /* SceneDelegate.swift */,
 				BAC25E2C294DEF9600A57BBA /* AppDelegate.swift */,
 				BAC25E49294E511000A57BBA /* Login */,
+				BA944A552977425000A771B4 /* Startseite */,
 				BAC25E46294E4C9D00A57BBA /* Mitgliederbereich */,
 				BAC25E45294E4C8D00A57BBA /* Fangliste */,
 				BAC25E44294E4C7700A57BBA /* Gewässer */,
@@ -247,8 +261,10 @@
 				BA0AED18295364D3007D5E36 /* GewaesserAnsichtViewController.swift in Sources */,
 				BA09482D294F3455008CD9CB /* VorstandSFVViewController.swift in Sources */,
 				BA0AED1A29536500007D5E36 /* Gewaesser.swift in Sources */,
+				BA944A5B297744B200A771B4 /* SwiftUI.swift in Sources */,
 				BAEC7D382965745500B6D669 /* FanglisteTableViewController.swift in Sources */,
 				BAEC7D3E2965753900B6D669 /* MitgliederbereichViewController.swift in Sources */,
+				BA944A572977428200A771B4 /* Startseite.swift in Sources */,
 				BAD3D6D42971675E002B05FC /* SectionData.swift in Sources */,
 				BAEC7D3A2965749900B6D669 /* Fangliste.swift in Sources */,
 				BAEC7D362965740100B6D669 /* FanglisteViewController.swift in Sources */,
