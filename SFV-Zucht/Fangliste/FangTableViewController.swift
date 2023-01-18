@@ -9,7 +9,7 @@ import UIKit
 
 class FangTableViewController: UITableViewController {
 
-    fileprivate let MITGLIEDERCELL = "FanglisteCell"
+    fileprivate let FANGLISTECELL = "FanglisteCell"
     
     fileprivate var sections: [SectionData] = [
     SectionData(open: false,
