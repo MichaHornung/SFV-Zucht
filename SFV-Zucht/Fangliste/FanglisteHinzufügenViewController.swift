@@ -18,27 +18,27 @@ class FanglisteHinzufu_genViewController: UIViewController, UITableViewDelegate,
     
     let Karpfen = [""]
     var karpfen = [
-    Fangliste(datum: "", fischart: "", gewicht: "", stueckzahl: "")]
+        Fangliste(gewaesser: "", datum: "", fischart: "", gewicht: "", stueckzahl: "")]
     
     let Schleie = [""]
     var schleie = [
-    Fangliste(datum: "", fischart: "", gewicht: "", stueckzahl: "")]
+        Fangliste(gewaesser: "", datum: "", fischart: "", gewicht: "", stueckzahl: "")]
     
     let Aal = [""]
     var aal = [
-    Fangliste(datum: "", fischart: "", gewicht: "", stueckzahl: "")]
+        Fangliste(gewaesser: "", datum: "", fischart: "", gewicht: "", stueckzahl: "")]
     
     let Hecht = [""]
     var hecht = [
-    Fangliste(datum: "", fischart: "", gewicht: "", stueckzahl: "")]
+        Fangliste(gewaesser: "", datum: "", fischart: "", gewicht: "", stueckzahl: "")]
     
     let Zander = [""]
     var zander = [
-    Fangliste(datum: "", fischart: "", gewicht: "", stueckzahl: "")]
+        Fangliste(gewaesser: "", datum: "", fischart: "", gewicht: "", stueckzahl: "")]
     
     let Barsch = [""]
     var barsch = [
-    Fangliste(datum: "", fischart: "", gewicht: "", stueckzahl: "")]
+        Fangliste(gewaesser: "", datum: "", fischart: "", gewicht: "", stueckzahl: "")]
     
     var selectedFische: Fangliste!
     

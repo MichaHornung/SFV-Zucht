@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+//@main
 struct SwiftUIBySfvZuchtApp {
     var body: some Scene {
         WindowGroup {

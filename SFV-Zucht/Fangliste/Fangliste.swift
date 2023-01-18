@@ -8,8 +8,11 @@
 import UIKit
 
 struct Fangliste{
+    var gewaesser: String
     var datum: String
     var fischart: String
     var gewicht: String
     var stueckzahl: String
 }
+
+
