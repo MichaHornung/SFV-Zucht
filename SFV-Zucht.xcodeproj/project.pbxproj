@@ -11,6 +11,7 @@
 		BA0AED1629536494007D5E36 /* GewaesserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0AED1529536494007D5E36 /* GewaesserTableViewController.swift */; };
 		BA0AED18295364D3007D5E36 /* GewaesserAnsichtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0AED17295364D3007D5E36 /* GewaesserAnsichtViewController.swift */; };
 		BA0AED1A29536500007D5E36 /* Gewaesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0AED1929536500007D5E36 /* Gewaesser.swift */; };
+		BA2AFA54297E7504004E675F /* StartseiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2AFA53297E7504004E675F /* StartseiteViewController.swift */; };
 		BA2FF2C32977F82D00919ACE /* FangTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2FF2C22977F82D00919ACE /* FangTableViewController.swift */; };
 		BA3F445E2965ADBC0035ACF5 /* AddFanglisteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F445D2965ADBC0035ACF5 /* AddFanglisteViewController.swift */; };
 		BA3F446029681AF60035ACF5 /* FanglisteHinzufügenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F445F29681AF60035ACF5 /* FanglisteHinzufügenViewController.swift */; };
@@ -44,6 +45,7 @@
 		BA0AED1529536494007D5E36 /* GewaesserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GewaesserTableViewController.swift; sourceTree = "<group>"; };
 		BA0AED17295364D3007D5E36 /* GewaesserAnsichtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GewaesserAnsichtViewController.swift; sourceTree = "<group>"; };
 		BA0AED1929536500007D5E36 /* Gewaesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gewaesser.swift; sourceTree = "<group>"; };
+		BA2AFA53297E7504004E675F /* StartseiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartseiteViewController.swift; sourceTree = "<group>"; };
 		BA2FF2C22977F82D00919ACE /* FangTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FangTableViewController.swift; sourceTree = "<group>"; };
 		BA3F445D2965ADBC0035ACF5 /* AddFanglisteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFanglisteViewController.swift; sourceTree = "<group>"; };
 		BA3F445F29681AF60035ACF5 /* FanglisteHinzufügenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FanglisteHinzufügenViewController.swift"; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			children = (
 				BA944A562977428200A771B4 /* Startseite.swift */,
 				BA944A5A297744B200A771B4 /* SwiftUI.swift */,
+				BA2AFA53297E7504004E675F /* StartseiteViewController.swift */,
 			);
 			path = Startseite;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				BA2FF2C32977F82D00919ACE /* FangTableViewController.swift in Sources */,
 				BAAB0EB829701D9D006FADCD /* FanglisteTableViewCell.swift in Sources */,
 				BAC25E4B294E5EF100A57BBA /* Vorstand.swift in Sources */,
+				BA2AFA54297E7504004E675F /* StartseiteViewController.swift in Sources */,
 				BA3F446029681AF60035ACF5 /* FanglisteHinzufügenViewController.swift in Sources */,
 				BAC25E55294E860800A57BBA /* TabBarViewController.swift in Sources */,
 				BAC25E2F294DEF9600A57BBA /* SceneDelegate.swift in Sources */,

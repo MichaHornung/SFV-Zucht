@@ -8,6 +8,8 @@
 import UIKit
 
 class FangTableViewController: UITableViewController {
+    
+    
 
     fileprivate let FANGLISTECELL = "FanglisteCell"
     
@@ -27,13 +29,15 @@ class FangTableViewController: UITableViewController {
     SectionData(open: false,
                 data: [""])]
 
-    let mitgliederbereich = [""]
+    let fangliste = [""]
     
-    var selectedIMitgliederbereich: String!
+    var selectedIFangliste: String!
 
     override func viewDidLoad() {
 
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(fangliste(_ :)), name: NSNotification.Name.init("de.ViewsWechseln.fangliste"), object: nil)
         
         navigationItem.title = "Fangliste"
 //        contentView.backgroundColor = .orange
@@ -41,6 +45,36 @@ class FangTableViewController: UITableViewController {
         setupTable()
 
     }
+    @objc func fangliste(_ notifcation: NSNotification){
+        if let fang = notifcation.object as? Fangliste{
+            
+            switch fang.gewaesser{
+            case "Schauffele":
+                sections[0].data.append(fang.fischart)
+            case "Gemeideloch 1/2":
+                sections[1].data.append(fang.fischart)
+            case "Altrhein":
+                sections[2].data.append(fang.fischart)
+            case "Rathjens/Kiefer":
+                sections[3].data.append(fang.fischart)
+            case "Ritterhecke":
+                sections[4].data.append(fang.fischart)
+            case "Altwasser":
+                sections[5].data.append(fang.fischart)
+            case "Hörnel":
+                sections[6].data.append(fang.fischart)
+                
+            default: break
+                
+            }
+            
+        }
+    }
+    
+    
+    
+    
+    
     fileprivate func setupTable() {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "FanglisteCell")
     }

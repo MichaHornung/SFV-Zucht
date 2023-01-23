@@ -9,8 +9,9 @@ import UIKit
 
 class FanglisteHinzufu_genViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
-    
 
+
+    
     @IBOutlet weak var tableview: UITableView!
     
     var fangliste: Fangliste!
@@ -48,7 +49,12 @@ class FanglisteHinzufu_genViewController: UIViewController, UITableViewDelegate,
         tableview.dataSource = self
         tableview.delegate = self
         
+        
     }
+    
+ 
+
+    
     
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
          selectedFische = karpfen[indexPath.row]
@@ -134,4 +140,7 @@ class FanglisteHinzufu_genViewController: UIViewController, UITableViewDelegate,
             return nil
         }
     }
+    
+    
+    
 }

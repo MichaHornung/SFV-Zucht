@@ -15,4 +15,6 @@ struct Fangliste{
     var stueckzahl: String
 }
 
+var Schauffele = Fangliste(gewaesser: "Schauffele", datum: "11.11.2023", fischart: "Karpfen", gewicht: "12.4", stueckzahl: "1")
 
+var fangliste_array: Array = [Schauffele]
