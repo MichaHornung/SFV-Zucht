@@ -9,12 +9,17 @@ import UIKit
 
 class FanglisteTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var gewaesser: UITextField!
-    @IBOutlet weak var datum: UITextField!
-    @IBOutlet weak var fischart: UITextField!
-    @IBOutlet weak var gewicht: UITextField!
-    @IBOutlet weak var stueckzahl: UITextField!
+   
+    
+
+    @IBOutlet weak var datum: UILabel!
+    @IBOutlet weak var fisch: UILabel!
+    @IBOutlet weak var gewicht: UILabel!
+    @IBOutlet weak var stueck: UILabel!
     
     
-    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+      }
 }

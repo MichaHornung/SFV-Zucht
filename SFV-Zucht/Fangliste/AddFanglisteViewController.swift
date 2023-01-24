@@ -90,8 +90,9 @@ class AddFanglisteViewController: UIViewController {
             let gfFisch = Fangliste(gewaesser: wasser, datum: datumText, fischart: fische, gewicht: kg, stueckzahl: stk)
            
             NotificationCenter.default.post(name: NSNotification.Name.init("fangliste"), object: gfFisch)
+            self.dismiss(animated: true)
         }
-        self.dismiss(animated: true)
+       
     }
 
     

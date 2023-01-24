@@ -23,20 +23,20 @@ class FangTableViewController: UITableViewController {
 
     fileprivate let FANGLISTECELL = "FanglisteCell"
     
-    fileprivate var sections: [SectionData] = [
-    SectionData(open: false,
+    fileprivate var sections: [SectionDataFangliste] = [
+        SectionDataFangliste(open: false,
                 data: []),
-    SectionData(open: false,
+        SectionDataFangliste(open: false,
                 data: []),
-    SectionData(open: false,
+        SectionDataFangliste(open: false,
                 data: []),
-    SectionData(open: false,
+        SectionDataFangliste(open: false,
                 data: []),
-    SectionData(open: false,
+        SectionDataFangliste(open: false,
                 data: []),
-    SectionData(open: false,
+        SectionDataFangliste(open: false,
                 data: []),
-    SectionData(open: false,
+        SectionDataFangliste(open: false,
                 data: [])]
 
     let fangliste = [""]
@@ -55,7 +55,7 @@ class FangTableViewController: UITableViewController {
         navigationItem.title = "Fangliste"
 //        contentView.backgroundColor = .orange
         
-        setupTable()
+      
         
 
         
@@ -66,19 +66,19 @@ class FangTableViewController: UITableViewController {
             
             switch fang.gewaesser{
             case "Schauffele":
-                sections[0].data.append(fang.fischart)
+                sections[0].data.append(fang)
             case "Gemeideloch 1/2":
-                sections[1].data.append(fang.fischart)
+                sections[1].data.append(fang)
             case "Altrhein":
-                sections[2].data.append(fang.fischart)
+                sections[2].data.append(fang)
             case "Rathjens/Kiefer":
-                sections[3].data.append(fang.fischart)
+                sections[3].data.append(fang)
             case "Ritterhecke":
-                sections[4].data.append(fang.fischart)
+                sections[4].data.append(fang)
             case "Altwasser":
-                sections[5].data.append(fang.fischart)
+                sections[5].data.append(fang)
             case "Hörnel":
-                sections[6].data.append(fang.fischart)
+                sections[6].data.append(fang)
                 
             default: break
                 
@@ -87,13 +87,7 @@ class FangTableViewController: UITableViewController {
         }
     }
     
-    
-    
-    
-    
-    fileprivate func setupTable() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "FanglisteCell")
-    }
+
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
@@ -163,6 +157,9 @@ class FangTableViewController: UITableViewController {
         
     }
     
+
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "FanglisteCell", for: indexPath) as! FanglisteTableViewCell
@@ -172,25 +169,47 @@ class FangTableViewController: UITableViewController {
 
         switch indexPath.section{
         case 0:
-            cell.textLabel?.text = sections[0].data[indexPath.row]
+            cell.datum.text = sections[0].data[indexPath.row].datum
+            cell.fisch.text = sections[0].data[indexPath.row].fischart
+            cell.gewicht.text = sections[0].data[indexPath.row].gewicht
+            cell.stueck.text = sections[0].data[indexPath.row].stueckzahl
+           
             cell.backgroundColor = .orange
         case 1:
-            cell.textLabel?.text = sections[1].data[indexPath.row]
+            cell.datum.text = sections[1].data[indexPath.row].datum
+            cell.fisch.text = sections[1].data[indexPath.row].fischart
+            cell.gewicht.text = sections[1].data[indexPath.row].gewicht
+            cell.stueck.text = sections[1].data[indexPath.row].stueckzahl
             cell.backgroundColor = .orange
         case 2:
-            cell.textLabel?.text = sections[2].data[indexPath.row]
+            cell.datum.text = sections[2].data[indexPath.row].datum
+            cell.fisch.text = sections[2].data[indexPath.row].fischart
+            cell.gewicht.text = sections[2].data[indexPath.row].gewicht
+            cell.stueck.text = sections[2].data[indexPath.row].stueckzahl
             cell.backgroundColor = .orange
         case 3:
-            cell.textLabel?.text = sections[3].data[indexPath.row]
+            cell.datum.text = sections[3].data[indexPath.row].datum
+            cell.fisch.text = sections[3].data[indexPath.row].fischart
+            cell.gewicht.text = sections[3].data[indexPath.row].gewicht
+            cell.stueck.text = sections[3].data[indexPath.row].stueckzahl
             cell.backgroundColor = .orange
         case 4:
-            cell.textLabel?.text = sections[4].data[indexPath.row]
+            cell.datum.text = sections[4].data[indexPath.row].datum
+            cell.fisch.text = sections[4].data[indexPath.row].fischart
+            cell.gewicht.text = sections[4].data[indexPath.row].gewicht
+            cell.stueck.text = sections[4].data[indexPath.row].stueckzahl
             cell.backgroundColor = .orange
         case 5:
-            cell.textLabel?.text = sections[5].data[indexPath.row]
+            cell.datum.text = sections[5].data[indexPath.row].datum
+            cell.fisch.text = sections[5].data[indexPath.row].fischart
+            cell.gewicht.text = sections[5].data[indexPath.row].gewicht
+            cell.stueck.text = sections[5].data[indexPath.row].stueckzahl
             cell.backgroundColor = .orange
         case 6:
-            cell.textLabel?.text = sections[6].data[indexPath.row]
+            cell.datum.text = sections[6].data[indexPath.row].datum
+            cell.fisch.text = sections[6].data[indexPath.row].fischart
+            cell.gewicht.text = sections[6].data[indexPath.row].gewicht
+            cell.stueck.text = sections[6].data[indexPath.row].stueckzahl
             cell.backgroundColor = .orange
         default:
             return cell
