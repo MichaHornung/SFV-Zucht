@@ -81,14 +81,15 @@ class AddFanglisteViewController: UIViewController {
     }
     
     @IBAction func addFang(_ sender: Any) {
-        if  let datumText = datum.text,datumText.isEmpty,
-            let fische = fischart.text,fische.isEmpty,
-            let kg = gewicht.text, kg.isEmpty,
-            let stk = stueckzahl.text, stk.isEmpty,
-            let wasser = gewaesser.text,wasser.isEmpty{
+        if  let datumText = datum.text, !datumText.isEmpty,
+            let fische = fischart.text, !fische.isEmpty,
+            let kg = gewicht.text, !kg.isEmpty,
+            let stk = stueckzahl.text, !stk.isEmpty,
+            let wasser = gewaesser.text, !wasser.isEmpty{
             
             let gfFisch = Fangliste(gewaesser: wasser, datum: datumText, fischart: fische, gewicht: kg, stueckzahl: stk)
-            NotificationCenter.default.post(name: NSNotification.Name.init("de.ViewsWechseln.fangliste"), object: gfFisch)
+           
+            NotificationCenter.default.post(name: NSNotification.Name.init("fangliste"), object: gfFisch)
         }
         self.dismiss(animated: true)
     }

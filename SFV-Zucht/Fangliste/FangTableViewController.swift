@@ -9,25 +9,35 @@ import UIKit
 
 class FangTableViewController: UITableViewController {
     
+    let schauffele = [
+        "Karpfen",
+        "Hecht",
+        "Zander",
+        "Aal"]
+    var schauffeleGewaesser = [
+        Fangliste(gewaesser: "", datum: "01.01.2023", fischart: "Karpfen", gewicht: "12,4", stueckzahl: "1")]
+    
+    var selectedFangliste: Fangliste!
+    
     
 
     fileprivate let FANGLISTECELL = "FanglisteCell"
     
     fileprivate var sections: [SectionData] = [
     SectionData(open: false,
-                data: [""]),
+                data: []),
     SectionData(open: false,
-                data: [""]),
+                data: []),
     SectionData(open: false,
-                data: [""]),
+                data: []),
     SectionData(open: false,
-                data: [""]),
+                data: []),
     SectionData(open: false,
-                data: [""]),
+                data: []),
     SectionData(open: false,
-                data: [""]),
+                data: []),
     SectionData(open: false,
-                data: [""])]
+                data: [])]
 
     let fangliste = [""]
     
@@ -37,12 +47,18 @@ class FangTableViewController: UITableViewController {
 
         super.viewDidLoad()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(fangliste(_ :)), name: NSNotification.Name.init("de.ViewsWechseln.fangliste"), object: nil)
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(fangliste(_ :)), name: NSNotification.Name.init("fangliste"), object: nil)
         
         navigationItem.title = "Fangliste"
 //        contentView.backgroundColor = .orange
         
         setupTable()
+        
+
+        
 
     }
     @objc func fangliste(_ notifcation: NSNotification){
@@ -149,12 +165,39 @@ class FangTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FanglisteCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FanglisteCell", for: indexPath) as! FanglisteTableViewCell
         let section = sections[indexPath.section]
         
-        cell.textLabel?.text = section.data[indexPath.row]
-        cell.backgroundColor = .orange
+       
 
+        switch indexPath.section{
+        case 0:
+            cell.textLabel?.text = sections[0].data[indexPath.row]
+            cell.backgroundColor = .orange
+        case 1:
+            cell.textLabel?.text = sections[1].data[indexPath.row]
+            cell.backgroundColor = .orange
+        case 2:
+            cell.textLabel?.text = sections[2].data[indexPath.row]
+            cell.backgroundColor = .orange
+        case 3:
+            cell.textLabel?.text = sections[3].data[indexPath.row]
+            cell.backgroundColor = .orange
+        case 4:
+            cell.textLabel?.text = sections[4].data[indexPath.row]
+            cell.backgroundColor = .orange
+        case 5:
+            cell.textLabel?.text = sections[5].data[indexPath.row]
+            cell.backgroundColor = .orange
+        case 6:
+            cell.textLabel?.text = sections[6].data[indexPath.row]
+            cell.backgroundColor = .orange
+        default:
+            return cell
+        
+
+        }
+        
         return cell
     }
     

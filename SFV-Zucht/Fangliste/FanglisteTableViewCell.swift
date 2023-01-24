@@ -9,10 +9,11 @@ import UIKit
 
 class FanglisteTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var datum: UILabel!
-    @IBOutlet weak var fischart: UILabel!
-    @IBOutlet weak var gewicht: UILabel!
-    @IBOutlet weak var stueckzahl: UILabel!
+    @IBOutlet weak var gewaesser: UITextField!
+    @IBOutlet weak var datum: UITextField!
+    @IBOutlet weak var fischart: UITextField!
+    @IBOutlet weak var gewicht: UITextField!
+    @IBOutlet weak var stueckzahl: UITextField!
     
     
     
