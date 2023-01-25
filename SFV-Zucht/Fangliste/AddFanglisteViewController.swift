@@ -9,6 +9,9 @@ import UIKit
 
 class AddFanglisteViewController: UIViewController {
 
+    let appdelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    
     
     @IBOutlet weak var gewaesser: UITextField!
     @IBOutlet weak var datum: UITextField!
@@ -86,10 +89,16 @@ class AddFanglisteViewController: UIViewController {
             let kg = gewicht.text, !kg.isEmpty,
             let stk = stueckzahl.text, !stk.isEmpty,
             let wasser = gewaesser.text, !wasser.isEmpty{
-            
-            let gfFisch = Fangliste(gewaesser: wasser, datum: datumText, fischart: fische, gewicht: kg, stueckzahl: stk)
+            let gfFische = Fanglisten(context: appdelegate.persistentContainer.viewContext)
+            gfFische.datum = datumText
+            gfFische.fischart = fische
+            gfFische.gewicht = kg
+            gfFische.stueckzahl = stk
+            gfFische.gewaesser = wasser
+            appdelegate.saveContext()
+    
            
-            NotificationCenter.default.post(name: NSNotification.Name.init("fangliste"), object: gfFisch)
+            NotificationCenter.default.post(name: NSNotification.Name.init("fangliste"), object: nil)
             self.dismiss(animated: true)
         }
        

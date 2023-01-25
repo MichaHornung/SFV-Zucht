@@ -13,6 +13,8 @@
 		BA0AED1A29536500007D5E36 /* Gewaesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0AED1929536500007D5E36 /* Gewaesser.swift */; };
 		BA2AFA54297E7504004E675F /* StartseiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2AFA53297E7504004E675F /* StartseiteViewController.swift */; };
 		BA2FF2C32977F82D00919ACE /* FangTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2FF2C22977F82D00919ACE /* FangTableViewController.swift */; };
+		BA3A746F29813FEB00943E44 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A746E29813FEB00943E44 /* testViewController.swift */; };
+		BA3A74712981425C00943E44 /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BA3A74702981425C00943E44 /* test.pdf */; };
 		BA3F445E2965ADBC0035ACF5 /* AddFanglisteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F445D2965ADBC0035ACF5 /* AddFanglisteViewController.swift */; };
 		BA3F446029681AF60035ACF5 /* FanglisteHinzufügenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F445F29681AF60035ACF5 /* FanglisteHinzufügenViewController.swift */; };
 		BA944A572977428200A771B4 /* Startseite.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA944A562977428200A771B4 /* Startseite.swift */; };
@@ -48,6 +50,8 @@
 		BA0AED1929536500007D5E36 /* Gewaesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gewaesser.swift; sourceTree = "<group>"; };
 		BA2AFA53297E7504004E675F /* StartseiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartseiteViewController.swift; sourceTree = "<group>"; };
 		BA2FF2C22977F82D00919ACE /* FangTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FangTableViewController.swift; sourceTree = "<group>"; };
+		BA3A746E29813FEB00943E44 /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		BA3A74702981425C00943E44 /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = "<group>"; };
 		BA3F445D2965ADBC0035ACF5 /* AddFanglisteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFanglisteViewController.swift; sourceTree = "<group>"; };
 		BA3F445F29681AF60035ACF5 /* FanglisteHinzufügenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FanglisteHinzufügenViewController.swift"; sourceTree = "<group>"; };
 		BA944A562977428200A771B4 /* Startseite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Startseite.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 		BAC25E20294DEF9600A57BBA = {
 			isa = PBXGroup;
 			children = (
+				BA3A746E29813FEB00943E44 /* testViewController.swift */,
 				BAC25E2B294DEF9600A57BBA /* SFV-Zucht */,
 				BAC25E2A294DEF9600A57BBA /* Products */,
 			);
@@ -134,6 +139,7 @@
 				BAC25E54294E860800A57BBA /* TabBarViewController.swift */,
 				BAAB0EB929704EC6006FADCD /* Fangnachweis.pdf */,
 				BAAB0EBB29704ED0006FADCD /* Rundschreiben 2018.pdf */,
+				BA3A74702981425C00943E44 /* test.pdf */,
 			);
 			path = "SFV-Zucht";
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAAB0EBA29704EC6006FADCD /* Fangnachweis.pdf in Resources */,
+				BA3A74712981425C00943E44 /* test.pdf in Resources */,
 				BAC25E3C294DEF9700A57BBA /* LaunchScreen.storyboard in Resources */,
 				BAAB0EBC29704ED0006FADCD /* Rundschreiben 2018.pdf in Resources */,
 				BAC25E39294DEF9700A57BBA /* Assets.xcassets in Resources */,
@@ -269,6 +276,7 @@
 			files = (
 				BA0AED18295364D3007D5E36 /* GewaesserAnsichtViewController.swift in Sources */,
 				BAE028702980004D001B9747 /* Section Data Fangliste.swift in Sources */,
+				BA3A746F29813FEB00943E44 /* testViewController.swift in Sources */,
 				BA09482D294F3455008CD9CB /* VorstandSFVViewController.swift in Sources */,
 				BA0AED1A29536500007D5E36 /* Gewaesser.swift in Sources */,
 				BA944A5B297744B200A771B4 /* SwiftUI.swift in Sources */,

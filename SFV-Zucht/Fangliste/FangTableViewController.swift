@@ -7,17 +7,21 @@
 
 import UIKit
 
+
+
 class FangTableViewController: UITableViewController {
     
-    let schauffele = [
-        "Karpfen",
-        "Hecht",
-        "Zander",
-        "Aal"]
-    var schauffeleGewaesser = [
-        Fangliste(gewaesser: "", datum: "01.01.2023", fischart: "Karpfen", gewicht: "12,4", stueckzahl: "1")]
+    let appdelegate = UIApplication.shared.delegate as! AppDelegate
     
-    var selectedFangliste: Fangliste!
+//    let schauffele = [
+//        "Karpfen",
+//        "Hecht",
+//        "Zander",
+//        "Aal"]
+//    var schauffeleGewaesser = [
+//        Fangliste(gewaesser: "", datum: "01.01.2023", fischart: "Karpfen", gewicht: "12,4", stueckzahl: "1")]
+//
+//    var selectedFangliste: Fangliste!
     
     
 
@@ -61,30 +65,44 @@ class FangTableViewController: UITableViewController {
         
 
     }
-    @objc func fangliste(_ notifcation: NSNotification){
-        if let fang = notifcation.object as? Fangliste{
-            
-            switch fang.gewaesser{
+//    Laden der Daten von CoreData
+    func loadData(){
+        let coreDataDaten = try! appdelegate.persistentContainer.viewContext.fetch(Fanglisten.fetchRequest())
+        sections[0].data = []
+        sections[1].data = []
+        sections[2].data = []
+        sections[3].data = []
+        sections[4].data = []
+        sections[5].data = []
+        sections[6].data = []
+        for daten in coreDataDaten{
+           
+            switch daten.gewaesser{
             case "Schauffele":
-                sections[0].data.append(fang)
-            case "Gemeideloch 1/2":
-                sections[1].data.append(fang)
+                sections[0].data.append(daten)
+            case "Gemeindeloch 1/2":
+                sections[1].data.append(daten)
             case "Altrhein":
-                sections[2].data.append(fang)
+                sections[2].data.append(daten)
             case "Rathjens/Kiefer":
-                sections[3].data.append(fang)
+                sections[3].data.append(daten)
             case "Ritterhecke":
-                sections[4].data.append(fang)
+                sections[4].data.append(daten)
             case "Altwasser":
-                sections[5].data.append(fang)
+                sections[5].data.append(daten)
             case "Hörnel":
-                sections[6].data.append(fang)
-                
-            default: break
+                sections[6].data.append(daten)
+                default: break
                 
             }
-            
         }
+            
+        
+    }
+    
+    @objc func fangliste(_ notifcation: NSNotification){
+   loadData()
+        tableView.reloadData()
     }
     
 
