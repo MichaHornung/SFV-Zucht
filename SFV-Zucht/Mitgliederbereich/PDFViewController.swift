@@ -1,5 +1,5 @@
 //
-//  testViewController.swift
+//  PDFViewController.swift
 //  SFV-Zucht
 //
 //  Created by Michael Hornung on 25.01.23.
@@ -9,7 +9,7 @@ import UIKit
 import WebKit
 
 
-class testViewController: UIViewController {
+class PDFViewController: UIViewController {
     @IBOutlet weak var test: WKWebView!
     
     override func viewDidLoad() {

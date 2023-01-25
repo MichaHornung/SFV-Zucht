@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         print(NSHomeDirectory())
-        let navController = UINavigationController(rootViewController: TabBarViewController())
+        let navController = UINavigationController(rootViewController: PDFViewController())
         
         window = UIWindow()
         window?.makeKeyAndVisible()

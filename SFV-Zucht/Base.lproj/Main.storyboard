@@ -686,10 +686,10 @@ Quelle: Impressum und Disclamer von eRecht24</string>
             </objects>
             <point key="canvasLocation" x="2543" y="354"/>
         </scene>
-        <!--Test View Controller-->
+        <!--View Controller-->
         <scene sceneID="pxM-TF-hFR">
             <objects>
-                <viewController id="Itf-Pr-SMY" customClass="testViewController" customModule="SFV_Zucht" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Itf-Pr-SMY" customClass="PDFViewController" customModule="SFV_Zucht" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OgJ-Lh-2Y8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
