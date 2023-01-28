@@ -13,17 +13,6 @@ class FangTableViewController: UITableViewController {
     
     let appdelegate = UIApplication.shared.delegate as! AppDelegate
     
-//    let schauffele = [
-//        "Karpfen",
-//        "Hecht",
-//        "Zander",
-//        "Aal"]
-//    var schauffeleGewaesser = [
-//        Fangliste(gewaesser: "", datum: "01.01.2023", fischart: "Karpfen", gewicht: "12,4", stueckzahl: "1")]
-//
-//    var selectedFangliste: Fangliste!
-    
-    
 
     fileprivate let FANGLISTECELL = "FanglisteCell"
     

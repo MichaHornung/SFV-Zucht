@@ -71,7 +71,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJL-UM-IJd">
-                                        <rect key="frame" x="14.333333333333336" y="88.333333333333371" width="118.33333333333331" height="34.333333333333343"/>
+                                        <rect key="frame" x="14.333333333333343" y="88.333333333333371" width="118.33333333333331" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Login Admin" cornerStyle="capsule">
                                             <color key="baseBackgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -426,10 +426,10 @@ Auf das jeweilige Gewässer klicken, ausfüllen, speichern, fertig
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qie-fh-Dd3">
-                                <rect key="frame" x="118" y="516" width="157" height="35"/>
+                                <rect key="frame" x="135" y="516" width="123" height="35"/>
                                 <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Zu den Gewässer" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="filled" title="Zur Fangliste" cornerStyle="capsule">
                                     <color key="baseBackgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>

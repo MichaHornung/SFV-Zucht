@@ -14,7 +14,7 @@ class PDFViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-print("test")
+
 
         let testePdf = Bundle.main.url(forResource: "test", withExtension: "pdf")
         test.load(URLRequest(url: testePdf!))
