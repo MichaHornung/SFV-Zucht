@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class AddFanglisteViewController: UIViewController {
 
@@ -97,7 +98,12 @@ class AddFanglisteViewController: UIViewController {
             gfFische.gewaesser = wasser
             appdelegate.saveContext()
     
-           
+//           Firebase Daten speichern
+            
+            let speicher = Firestore.firestore().collection("Fangliste").addDocument(data: ["datum":datumText, "fischart": fische, "gewicht": kg, "stueckzahl": stk, "gewaesser": wasser])
+            
+
+            
             NotificationCenter.default.post(name: NSNotification.Name.init("fangliste"), object: nil)
             self.dismiss(animated: true)
         }

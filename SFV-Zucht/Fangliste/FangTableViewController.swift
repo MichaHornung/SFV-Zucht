@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import CoreData
 
 
 
@@ -47,7 +49,7 @@ class FangTableViewController: UITableViewController {
         
         navigationItem.title = "Fangliste"
 //        contentView.backgroundColor = .orange
-        
+        loadData()
       
         
 
@@ -56,42 +58,79 @@ class FangTableViewController: UITableViewController {
     }
 //    Laden der Daten von CoreData
     func loadData(){
-        let coreDataDaten = try! appdelegate.persistentContainer.viewContext.fetch(Fanglisten.fetchRequest())
-        sections[0].data = []
-        sections[1].data = []
-        sections[2].data = []
-        sections[3].data = []
-        sections[4].data = []
-        sections[5].data = []
-        sections[6].data = []
-        for daten in coreDataDaten{
-           
-            switch daten.gewaesser{
-            case "Schauffele":
-                sections[0].data.append(daten)
-            case "Gemeindeloch 1/2":
-                sections[1].data.append(daten)
-            case "Altrhein":
-                sections[2].data.append(daten)
-            case "Rathjens/Kiefer":
-                sections[3].data.append(daten)
-            case "Ritterhecke":
-                sections[4].data.append(daten)
-            case "Altwasser":
-                sections[5].data.append(daten)
-            case "Hörnel":
-                sections[6].data.append(daten)
-                default: break
-                
-            }
-        }
-            
+      
+        //            Laden der gespeicherte Daten
+                    
+                    let gespeichert = Firestore.firestore().collection("Fangliste").addSnapshotListener { query, error in
+                        if error != nil{
+                            print("error")
+                        }
+                        let documents = query?.documents
+                        documents.map { querydocumentssnapshot in
+                            let data = querydocumentssnapshot.first?.data()
+//                            CoreData daten löschen
+                            let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Fanglisten")
+                            let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+
+                            do {
+                                try self.appdelegate.persistentContainer.persistentStoreCoordinator.execute(deleteRequest, with: self.appdelegate.persistentContainer.viewContext)
+                            } catch let error as NSError {
+                             print("error")
+                            }
+                            
+                            for snapshot in querydocumentssnapshot{
+                                let gfFische = Fanglisten(context: self.appdelegate.persistentContainer.viewContext)
+                                let fisch = snapshot.data()
+                                gfFische.datum = fisch["datum"] as? String
+                                gfFische.fischart = fisch["fischart"] as? String
+                                gfFische.gewicht = fisch["gewicht"] as? String
+                                gfFische.stueckzahl = fisch["stueckzahl"] as? String
+                                gfFische.gewaesser = fisch["gewaesser"] as? String
+                                
+                            }
+                            self.appdelegate.saveContext()
+                            let coreDataDaten = try! self.appdelegate.persistentContainer.viewContext.fetch(Fanglisten.fetchRequest())
+                            self.sections[0].data = []
+                            self.sections[1].data = []
+                            self.sections[2].data = []
+                            self.sections[3].data = []
+                            self.sections[4].data = []
+                            self.sections[5].data = []
+                            self.sections[6].data = []
+                            for daten in coreDataDaten{
+                               
+                                switch daten.gewaesser{
+                                case "Schauffele":
+                                    self.sections[0].data.append(daten)
+                                case "Gemeindeloch 1/2":
+                                    self.sections[1].data.append(daten)
+                                case "Altrhein":
+                                    self.sections[2].data.append(daten)
+                                case "Rathjens/Kiefer":
+                                    self.sections[3].data.append(daten)
+                                case "Ritterhecke":
+                                    self.sections[4].data.append(daten)
+                                case "Altwasser":
+                                    self.sections[5].data.append(daten)
+                                case "Hörnel":
+                                    self.sections[6].data.append(daten)
+                                    default: break
+                                    
+                                }
+                            }
+                        }
+//                        SORGT DAFÜR DAS DER UI IM VORDERGRUND AKTUALLISIERT
+                        DispatchQueue.main.async {
+                            self.tableView.reloadData()
+                        }
+                        
+                    }
         
     }
     
     @objc func fangliste(_ notifcation: NSNotification){
    loadData()
-        tableView.reloadData()
+       
     }
     
 

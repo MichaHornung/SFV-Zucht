@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>462294903008-qvasi4i406j35euj80n440nvdtcgb3qj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.462294903008-qvasi4i406j35euj80n440nvdtcgb3qj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDwsdX0X4LqvScXiqAFINUSM37RbHq6bWQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>462294903008</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.michaelhornung.SFV-Zucht</string>
+	<key>PROJECT_ID</key>
+	<string>sfv-woehrt</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sfv-woehrt.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:462294903008:ios:c44da7ed0d14e06bfc8885</string>
+</dict>
+</plist>
