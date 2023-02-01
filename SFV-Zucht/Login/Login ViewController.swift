@@ -9,6 +9,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+
+    
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var loginbutton: UIButton!
@@ -22,7 +24,10 @@ class LoginViewController: UIViewController {
         password.delegate = self
         password.isSecureTextEntry = true
         
+
+        
     }
+
     
     @IBAction func login(){
        

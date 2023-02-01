@@ -32,6 +32,9 @@
 		BAAB0EB829701D9D006FADCD /* FanglisteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAB0EB729701D9D006FADCD /* FanglisteTableViewCell.swift */; };
 		BAAB0EBA29704EC6006FADCD /* Fangnachweis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BAAB0EB929704EC6006FADCD /* Fangnachweis.pdf */; };
 		BAAB0EBC29704ED0006FADCD /* Rundschreiben 2018.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BAAB0EBB29704ED0006FADCD /* Rundschreiben 2018.pdf */; };
+		BAAFC048298A56AF00BF6C86 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAFC047298A56AF00BF6C86 /* NetworkController.swift */; };
+		BAAFC054298A7C0C00BF6C86 /* FishAPITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAFC053298A7C0C00BF6C86 /* FishAPITableViewController.swift */; };
+		BAAFC056298A7E1F00BF6C86 /* APIJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAFC055298A7E1F00BF6C86 /* APIJson.swift */; };
 		BAC25E2D294DEF9600A57BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E2C294DEF9600A57BBA /* AppDelegate.swift */; };
 		BAC25E2F294DEF9600A57BBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E2E294DEF9600A57BBA /* SceneDelegate.swift */; };
 		BAC25E31294DEF9600A57BBA /* Login ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC25E30294DEF9600A57BBA /* Login ViewController.swift */; };
@@ -68,6 +71,9 @@
 		BAAB0EB729701D9D006FADCD /* FanglisteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanglisteTableViewCell.swift; sourceTree = "<group>"; };
 		BAAB0EB929704EC6006FADCD /* Fangnachweis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Fangnachweis.pdf; sourceTree = "<group>"; };
 		BAAB0EBB29704ED0006FADCD /* Rundschreiben 2018.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Rundschreiben 2018.pdf"; sourceTree = "<group>"; };
+		BAAFC047298A56AF00BF6C86 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		BAAFC053298A7C0C00BF6C86 /* FishAPITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishAPITableViewController.swift; sourceTree = "<group>"; };
+		BAAFC055298A7E1F00BF6C86 /* APIJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIJson.swift; sourceTree = "<group>"; };
 		BAC25E29294DEF9600A57BBA /* SFV-Zucht.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SFV-Zucht.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC25E2C294DEF9600A57BBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAC25E2E294DEF9600A57BBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +125,16 @@
 			path = Startseite;
 			sourceTree = "<group>";
 		};
+		BAAFC04A298A58B900BF6C86 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BAAFC047298A56AF00BF6C86 /* NetworkController.swift */,
+				BAAFC053298A7C0C00BF6C86 /* FishAPITableViewController.swift */,
+				BAAFC055298A7E1F00BF6C86 /* APIJson.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		BAC25E20294DEF9600A57BBA = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +156,7 @@
 			children = (
 				BAC25E2E294DEF9600A57BBA /* SceneDelegate.swift */,
 				BAC25E2C294DEF9600A57BBA /* AppDelegate.swift */,
+				BAAFC04A298A58B900BF6C86 /* API */,
 				BAC25E49294E511000A57BBA /* Login */,
 				BA944A552977425000A771B4 /* Startseite */,
 				BAC25E46294E4C9D00A57BBA /* Mitgliederbereich */,
@@ -320,9 +337,11 @@
 				BAC25E31294DEF9600A57BBA /* Login ViewController.swift in Sources */,
 				BA0AED1629536494007D5E36 /* GewaesserTableViewController.swift in Sources */,
 				BA3F445E2965ADBC0035ACF5 /* AddFanglisteViewController.swift in Sources */,
+				BAAFC054298A7C0C00BF6C86 /* FishAPITableViewController.swift in Sources */,
 				BAC25E2D294DEF9600A57BBA /* AppDelegate.swift in Sources */,
 				BAEC7D402965757300B6D669 /* Mitgliederbereich.swift in Sources */,
 				BAC25E37294DEF9600A57BBA /* SFV_Zucht.xcdatamodeld in Sources */,
+				BAAFC056298A7E1F00BF6C86 /* APIJson.swift in Sources */,
 				BA2FF2C32977F82D00919ACE /* FangTableViewController.swift in Sources */,
 				BAAB0EB829701D9D006FADCD /* FanglisteTableViewCell.swift in Sources */,
 				BAC25E4B294E5EF100A57BBA /* Vorstand.swift in Sources */,
@@ -330,6 +349,7 @@
 				BA3F446029681AF60035ACF5 /* FanglisteHinzufügenViewController.swift in Sources */,
 				BAC25E2F294DEF9600A57BBA /* SceneDelegate.swift in Sources */,
 				BAEC7D3C2965750700B6D669 /* MitgliederbereichTableViewController.swift in Sources */,
+				BAAFC048298A56AF00BF6C86 /* NetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

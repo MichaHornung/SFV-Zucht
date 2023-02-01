@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DaR-gd-bIZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,6 +9,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--FishAPI Table View Controller-->
+        <scene sceneID="o4b-LZ-FYy">
+            <objects>
+                <tableViewController id="oxJ-Sk-Bve" customClass="FishAPITableViewController" customModule="SFV_Zucht" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="R4M-JE-Hui">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="toApi" id="LL7-QS-DO5">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LL7-QS-DO5" id="GHR-AL-YJw">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oxJ-Sk-Bve" id="oIZ-IR-YCa"/>
+                            <outlet property="delegate" destination="oxJ-Sk-Bve" id="tYF-YN-4y5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="h6i-aP-7Cg"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RnR-c3-Kms" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173" y="-27"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -46,7 +75,7 @@
                                     <action selector="login" destination="BYZ-38-t0r" eventType="touchUpInside" id="pOj-zA-8Xf"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="PyS-kI-e5L">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="PyS-kI-e5L">
                                 <rect key="frame" x="135" y="240" width="123" height="85"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="260" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Benutzername" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j48-dU-1rh">
@@ -67,6 +96,15 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRV-0o-W63">
+                                <rect key="frame" x="154" y="621" width="85" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Fish API"/>
+                                <connections>
+                                    <segue destination="oxJ-Sk-Bve" kind="show" id="Aen-kI-hB2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.1647058874" green="0.2235293984" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -782,7 +820,7 @@ Quelle: Impressum und Disclamer von eRecht24</string>
                                 <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1922 e. V." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmW-Wh-mdL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1922 e. V." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmW-Wh-mdL">
                                 <rect key="frame" x="159" y="152" width="75" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -795,7 +833,7 @@ Quelle: Impressum und Disclamer von eRecht24</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0z-Bh-Hi9">
-                                <rect key="frame" x="16" y="295" width="40" height="32"/>
+                                <rect key="frame" x="16" y="183" width="40" height="32"/>
                                 <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="arrowshape.backward" catalog="system"/>
@@ -803,21 +841,18 @@ Quelle: Impressum und Disclamer von eRecht24</string>
                                     <action selector="rueckwaerts:" destination="41Y-xJ-xon" eventType="touchUpInside" id="1mw-4i-9UG"/>
                                 </connections>
                             </button>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMu-Zg-0X9">
-                                <rect key="frame" x="16" y="335" width="361" height="434"/>
+                            <wkWebView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eMu-Zg-0X9">
+                                <rect key="frame" x="16" y="223" width="361" height="546"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="434" id="STL-oa-Z33"/>
-                                </constraints>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrE-Ye-NJh">
-                                <rect key="frame" x="64" y="295" width="34" height="32"/>
+                                <rect key="frame" x="64" y="183" width="34" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="34" id="RkO-di-bni"/>
+                                    <constraint firstAttribute="width" constant="34" id="9fx-Pd-LIJ"/>
                                 </constraints>
                                 <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
@@ -830,23 +865,25 @@ Quelle: Impressum und Disclamer von eRecht24</string>
                         <viewLayoutGuide key="safeArea" id="mEZ-5m-JGn"/>
                         <color key="backgroundColor" red="0.1647058874" green="0.2235293984" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="e0z-Bh-Hi9" firstAttribute="leading" secondItem="eMu-Zg-0X9" secondAttribute="leading" id="066-VZ-hwE"/>
-                            <constraint firstItem="eMu-Zg-0X9" firstAttribute="bottom" secondItem="mEZ-5m-JGn" secondAttribute="bottom" id="0ft-TA-9xT"/>
-                            <constraint firstItem="oOA-UB-gdL" firstAttribute="centerX" secondItem="LmW-Wh-mdL" secondAttribute="centerX" id="1Ci-8g-dPc"/>
-                            <constraint firstItem="eMu-Zg-0X9" firstAttribute="top" secondItem="e0z-Bh-Hi9" secondAttribute="bottom" constant="8" id="5aN-BQ-EcC"/>
-                            <constraint firstItem="mEZ-5m-JGn" firstAttribute="trailing" secondItem="wrE-Ye-NJh" secondAttribute="trailing" constant="295" id="8RW-1R-SRB"/>
-                            <constraint firstItem="miY-hI-whY" firstAttribute="centerX" secondItem="oOA-UB-gdL" secondAttribute="centerX" id="Hd1-Te-jOf"/>
-                            <constraint firstItem="e0z-Bh-Hi9" firstAttribute="baseline" secondItem="wrE-Ye-NJh" secondAttribute="baseline" id="I8X-oI-Zbh"/>
-                            <constraint firstItem="miY-hI-whY" firstAttribute="leading" secondItem="e0z-Bh-Hi9" secondAttribute="leading" id="S9f-Ql-TRu"/>
-                            <constraint firstItem="oOA-UB-gdL" firstAttribute="leading" secondItem="mEZ-5m-JGn" secondAttribute="leading" id="X5Z-0a-Mhi"/>
-                            <constraint firstItem="wrE-Ye-NJh" firstAttribute="leading" secondItem="e0z-Bh-Hi9" secondAttribute="trailing" constant="8" id="dar-oF-XIQ"/>
-                            <constraint firstItem="LmW-Wh-mdL" firstAttribute="top" secondItem="oOA-UB-gdL" secondAttribute="bottom" constant="7.6666666666666856" id="gFu-fR-Qel"/>
-                            <constraint firstItem="miY-hI-whY" firstAttribute="top" secondItem="mEZ-5m-JGn" secondAttribute="top" constant="17" id="hIx-OE-PSq"/>
-                            <constraint firstItem="oOA-UB-gdL" firstAttribute="top" secondItem="mEZ-5m-JGn" secondAttribute="top" constant="65" id="hso-mt-GSY"/>
-                            <constraint firstItem="miY-hI-whY" firstAttribute="leading" secondItem="lLn-p3-oEF" secondAttribute="leadingMargin" id="mJh-D9-FFz"/>
-                            <constraint firstItem="miY-hI-whY" firstAttribute="trailing" secondItem="eMu-Zg-0X9" secondAttribute="trailing" id="nvl-Ts-KV6"/>
-                            <constraint firstItem="miY-hI-whY" firstAttribute="trailing" secondItem="lLn-p3-oEF" secondAttribute="trailingMargin" id="ryd-wK-FE2"/>
-                            <constraint firstItem="LmW-Wh-mdL" firstAttribute="top" secondItem="miY-hI-whY" secondAttribute="bottom" constant="8" id="wkO-v9-ot3"/>
+                            <constraint firstItem="oOA-UB-gdL" firstAttribute="top" secondItem="mEZ-5m-JGn" secondAttribute="top" constant="65" id="1de-l6-eX4"/>
+                            <constraint firstItem="miY-hI-whY" firstAttribute="trailing" secondItem="lLn-p3-oEF" secondAttribute="trailingMargin" id="2lK-zG-ZhT"/>
+                            <constraint firstItem="oOA-UB-gdL" firstAttribute="leading" secondItem="mEZ-5m-JGn" secondAttribute="leading" id="8VJ-je-MrU"/>
+                            <constraint firstItem="miY-hI-whY" firstAttribute="centerX" secondItem="oOA-UB-gdL" secondAttribute="centerX" id="9jk-Uo-TL4"/>
+                            <constraint firstItem="miY-hI-whY" firstAttribute="leading" secondItem="e0z-Bh-Hi9" secondAttribute="leading" id="Agm-pp-YOj"/>
+                            <constraint firstItem="miY-hI-whY" firstAttribute="top" secondItem="mEZ-5m-JGn" secondAttribute="top" constant="17" id="E6k-gn-0VL"/>
+                            <constraint firstItem="eMu-Zg-0X9" firstAttribute="top" secondItem="e0z-Bh-Hi9" secondAttribute="bottom" constant="8" id="Gdi-BB-YZA"/>
+                            <constraint firstItem="wrE-Ye-NJh" firstAttribute="leading" secondItem="e0z-Bh-Hi9" secondAttribute="trailing" constant="8" id="HPZ-q4-bxS"/>
+                            <constraint firstItem="LmW-Wh-mdL" firstAttribute="top" secondItem="oOA-UB-gdL" secondAttribute="bottom" constant="7.6666666666666856" id="MBb-ZF-VGM"/>
+                            <constraint firstItem="eMu-Zg-0X9" firstAttribute="top" secondItem="LmW-Wh-mdL" secondAttribute="bottom" constant="50" id="NNv-3U-0cT"/>
+                            <constraint firstItem="oOA-UB-gdL" firstAttribute="centerX" secondItem="LmW-Wh-mdL" secondAttribute="centerX" id="PFJ-Wc-k1Q"/>
+                            <constraint firstItem="e0z-Bh-Hi9" firstAttribute="top" secondItem="oOA-UB-gdL" secondAttribute="bottom" constant="38.666666666666686" id="QGL-Q3-Zab"/>
+                            <constraint firstItem="e0z-Bh-Hi9" firstAttribute="leading" secondItem="eMu-Zg-0X9" secondAttribute="leading" id="RtT-R7-LcD"/>
+                            <constraint firstItem="LmW-Wh-mdL" firstAttribute="top" secondItem="miY-hI-whY" secondAttribute="bottom" constant="8" id="Ta6-Im-XTE"/>
+                            <constraint firstItem="miY-hI-whY" firstAttribute="trailing" secondItem="eMu-Zg-0X9" secondAttribute="trailing" id="WjE-L2-06q"/>
+                            <constraint firstItem="miY-hI-whY" firstAttribute="leading" secondItem="lLn-p3-oEF" secondAttribute="leadingMargin" id="XGI-5s-dUI"/>
+                            <constraint firstItem="eMu-Zg-0X9" firstAttribute="bottom" secondItem="mEZ-5m-JGn" secondAttribute="bottom" id="d0l-JH-Zq9"/>
+                            <constraint firstItem="mEZ-5m-JGn" firstAttribute="trailing" secondItem="wrE-Ye-NJh" secondAttribute="trailing" constant="295" id="j5o-Oe-Ppk"/>
+                            <constraint firstItem="e0z-Bh-Hi9" firstAttribute="baseline" secondItem="wrE-Ye-NJh" secondAttribute="baseline" id="mek-Rh-SPa"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Startseite" image="house.fill" catalog="system" selectedImage="house" id="aFb-Nu-YPr"/>
@@ -858,24 +895,6 @@ Quelle: Impressum und Disclamer von eRecht24</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REn-Xh-8Jo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-845.03816793893122" y="1359.8591549295775"/>
-        </scene>
-        <!--Info-->
-        <scene sceneID="JrR-Zq-9Yr">
-            <objects>
-                <viewController id="1v1-2j-i2W" userLabel="Info" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DkG-dc-D20">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="eSm-ge-YQ9"/>
-                        <color key="backgroundColor" red="0.1647058874" green="0.2235293984" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Info" image="info.circle" catalog="system" id="A2T-9C-2LX" userLabel="Info"/>
-                    <navigationItem key="navigationItem" id="cLe-IR-1wR"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zhI-lJ-xHT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-150" y="674"/>
         </scene>
         <!--Gewässer-->
         <scene sceneID="XUg-BN-fR0">
@@ -1262,7 +1281,6 @@ Quelle: Impressum und Disclamer von eRecht24</string>
         <image name="fish.fill" catalog="system" width="128" height="99"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
-        <image name="info.circle" catalog="system" width="128" height="123"/>
         <image name="person.2" catalog="system" width="128" height="82"/>
         <image name="person.2.fill" catalog="system" width="128" height="81"/>
         <image name="plus" catalog="system" width="128" height="113"/>
